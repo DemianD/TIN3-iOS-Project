@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AD598BD51E0FDC6800A488D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD598BD41E0FDC6800A488D4 /* AppDelegate.swift */; };
-		AD598BD71E0FDC6800A488D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD598BD61E0FDC6800A488D4 /* ViewController.swift */; };
 		AD598BDA1E0FDC6800A488D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD598BD81E0FDC6800A488D4 /* Main.storyboard */; };
 		AD598BDC1E0FDC6800A488D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD598BDB1E0FDC6800A488D4 /* Assets.xcassets */; };
 		AD598BDF1E0FDC6800A488D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD598BDD1E0FDC6800A488D4 /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		AD598BD11E0FDC6800A488D4 /* TIN3-iOS-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TIN3-iOS-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD598BD41E0FDC6800A488D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AD598BD61E0FDC6800A488D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AD598BD91E0FDC6800A488D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD598BDB1E0FDC6800A488D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD598BDE1E0FDC6800A488D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +52,21 @@
 		AD598BD31E0FDC6800A488D4 /* TIN3-iOS-Project */ = {
 			isa = PBXGroup;
 			children = (
-				AD598BD41E0FDC6800A488D4 /* AppDelegate.swift */,
-				AD598BD61E0FDC6800A488D4 /* ViewController.swift */,
+				ADC9163B1E11B26D00057EDF /* Supporting Files */,
 				AD598BD81E0FDC6800A488D4 /* Main.storyboard */,
+			);
+			path = "TIN3-iOS-Project";
+			sourceTree = "<group>";
+		};
+		ADC9163B1E11B26D00057EDF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD598BD41E0FDC6800A488D4 /* AppDelegate.swift */,
 				AD598BDB1E0FDC6800A488D4 /* Assets.xcassets */,
 				AD598BDD1E0FDC6800A488D4 /* LaunchScreen.storyboard */,
 				AD598BE01E0FDC6800A488D4 /* Info.plist */,
 			);
-			path = "TIN3-iOS-Project";
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +142,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD598BD71E0FDC6800A488D4 /* ViewController.swift in Sources */,
 				AD598BD51E0FDC6800A488D4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +306,7 @@
 				AD598BE51E0FDC6800A488D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
