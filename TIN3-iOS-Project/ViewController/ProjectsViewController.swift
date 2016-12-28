@@ -13,6 +13,7 @@ class ProjectsViewController: UITableViewController
     private struct Storyboard {
         static let ProjectCellIdentifier = "Project"
         static let ShowProjectSegue = "ShowProjectSegue"
+        static let CreateProjectSegue = "CreateProjectSegue"
     }
     
     var projects = Array<Project>() {
