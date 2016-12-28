@@ -7,19 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD07FB6A1E12D53C0050FC22 /* ProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD07FB691E12D53C0050FC22 /* ProjectTableViewCell.swift */; };
+		AD07FB6C1E12D5440050FC22 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD07FB6B1E12D5440050FC22 /* Project.swift */; };
+		AD07FB6E1E12D54B0050FC22 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD07FB6D1E12D54B0050FC22 /* ProjectsViewController.swift */; };
+		AD52C15F1E14259F005096DA /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD52C15E1E14259F005096DA /* Status.swift */; };
 		AD598BD51E0FDC6800A488D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD598BD41E0FDC6800A488D4 /* AppDelegate.swift */; };
 		AD598BDA1E0FDC6800A488D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD598BD81E0FDC6800A488D4 /* Main.storyboard */; };
 		AD598BDC1E0FDC6800A488D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD598BDB1E0FDC6800A488D4 /* Assets.xcassets */; };
 		AD598BDF1E0FDC6800A488D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD598BDD1E0FDC6800A488D4 /* LaunchScreen.storyboard */; };
+		AD792ED71E13C38900E3430F /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD792ED61E13C38900E3430F /* Circle.swift */; };
+		ADBD53E11E12DBBB00549EFA /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD53E01E12DBBB00549EFA /* ProjectViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD07FB691E12D53C0050FC22 /* ProjectTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectTableViewCell.swift; path = View/ProjectTableViewCell.swift; sourceTree = "<group>"; };
+		AD07FB6B1E12D5440050FC22 /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Project.swift; path = Model/Project.swift; sourceTree = "<group>"; };
+		AD07FB6D1E12D54B0050FC22 /* ProjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectsViewController.swift; path = ViewController/ProjectsViewController.swift; sourceTree = "<group>"; };
+		AD52C15E1E14259F005096DA /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Status.swift; path = Model/Status.swift; sourceTree = "<group>"; };
 		AD598BD11E0FDC6800A488D4 /* TIN3-iOS-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TIN3-iOS-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD598BD41E0FDC6800A488D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD598BD91E0FDC6800A488D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD598BDB1E0FDC6800A488D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD598BDE1E0FDC6800A488D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD598BE01E0FDC6800A488D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD792ED61E13C38900E3430F /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Circle.swift; path = View/Component/Circle.swift; sourceTree = "<group>"; };
+		ADBD53E01E12DBBB00549EFA /* ProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectViewController.swift; path = ViewController/ProjectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +45,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD07FB601E12CF7E0050FC22 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AD07FB6D1E12D54B0050FC22 /* ProjectsViewController.swift */,
+				ADBD53E01E12DBBB00549EFA /* ProjectViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		AD07FB631E12D0DE0050FC22 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD07FB6B1E12D5440050FC22 /* Project.swift */,
+				AD52C15E1E14259F005096DA /* Status.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AD07FB661E12D45E0050FC22 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD792ED51E13C35900E3430F /* Component */,
+				AD07FB691E12D53C0050FC22 /* ProjectTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		AD598BC81E0FDC6700A488D4 = {
 			isa = PBXGroup;
 			children = (
@@ -52,10 +91,21 @@
 		AD598BD31E0FDC6800A488D4 /* TIN3-iOS-Project */ = {
 			isa = PBXGroup;
 			children = (
+				AD07FB661E12D45E0050FC22 /* View */,
+				AD07FB631E12D0DE0050FC22 /* Model */,
+				AD07FB601E12CF7E0050FC22 /* ViewController */,
 				ADC9163B1E11B26D00057EDF /* Supporting Files */,
 				AD598BD81E0FDC6800A488D4 /* Main.storyboard */,
 			);
 			path = "TIN3-iOS-Project";
+			sourceTree = "<group>";
+		};
+		AD792ED51E13C35900E3430F /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				AD792ED61E13C38900E3430F /* Circle.swift */,
+			);
+			name = Component;
 			sourceTree = "<group>";
 		};
 		ADC9163B1E11B26D00057EDF /* Supporting Files */ = {
@@ -142,7 +192,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADBD53E11E12DBBB00549EFA /* ProjectViewController.swift in Sources */,
+				AD07FB6E1E12D54B0050FC22 /* ProjectsViewController.swift in Sources */,
+				AD52C15F1E14259F005096DA /* Status.swift in Sources */,
 				AD598BD51E0FDC6800A488D4 /* AppDelegate.swift in Sources */,
+				AD07FB6A1E12D53C0050FC22 /* ProjectTableViewCell.swift in Sources */,
+				AD07FB6C1E12D5440050FC22 /* Project.swift in Sources */,
+				AD792ED71E13C38900E3430F /* Circle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
