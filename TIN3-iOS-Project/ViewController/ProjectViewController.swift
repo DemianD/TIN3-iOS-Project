@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProjectViewController: UIViewController {
+class ProjectViewController: UITableViewController {
 
     var project: Project? {
         didSet {
