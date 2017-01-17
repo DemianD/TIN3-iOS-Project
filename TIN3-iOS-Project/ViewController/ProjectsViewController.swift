@@ -22,29 +22,15 @@ class ProjectsViewController: UITableViewController
         }
     }
     
-    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        let project1 = Project("TestProject 1")
+        projects.removeAll();
         
-        project1.status = Status.Ok
-        
-        let project2 = Project("TestProject 2")
-        
-        project2.status = Status.SslExpired
-        
-        let project3 = Project("TestProject 3")
-        
-        project3.status = Status.Unreachable
-        
-        projects.append(project1);
-        projects.append(project2);
-        projects.append(project3);
-        
-        tableView.reloadData()
+        ProjectRepository.instance.all { result in
+            self.projects = result
+        }
     }
-    
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1

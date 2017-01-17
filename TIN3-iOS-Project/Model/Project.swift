@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import ObjectMapper
 
-class Project
+class Project : Mappable
 {
     
     var statuses = [
@@ -17,11 +18,20 @@ class Project
         .Unreachable: "Website is niet bereikbaar"
     ]
  
-    var name: String
+    var id = -1;
+    var name: String?
+    var url: String?
+    
     var status: Status?
     
-    init(_ name: String) {
-        self.name = name
+    required init?(map: Map) {
+        
+    }
+    
+    func mapping(map: Map) {
+        id <- map["id"]
+        name <- map["name"]
+        url <- map["url"]
     }
     
     
