@@ -10,6 +10,10 @@ import UIKit
 
 class ProjectViewController: UITableViewController {
 
+    private struct Storyboard {
+        static let ProjectTimerSegue = "ProjectTimerSegue"
+    }
+    
     @IBOutlet weak var url: UILabel!
     
     var project: Project?
@@ -23,6 +27,14 @@ class ProjectViewController: UITableViewController {
             self.title = project.name
             
             url.text = project.url
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == Storyboard.ProjectTimerSegue) {
+            if let tvc = segue.destination as? TimerViewController {
+                tvc.project = project
+            }
         }
     }
 
