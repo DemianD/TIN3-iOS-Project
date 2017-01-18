@@ -24,6 +24,10 @@ class Project : Mappable
     
     var status: Status?
     
+    init() {
+        
+    }
+    
     required init?(map: Map) {
         
     }

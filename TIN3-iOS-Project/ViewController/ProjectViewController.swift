@@ -10,16 +10,19 @@ import UIKit
 
 class ProjectViewController: UITableViewController {
 
-    var project: Project? {
-        didSet {
-            updateUI()
-        }
+    @IBOutlet weak var url: UILabel!
+    
+    var project: Project?
+    
+    override func viewDidLoad() {
+        updateUI()
     }
     
     private func updateUI() {
         if let project = self.project {
             self.title = project.name
-        
+            
+            url.text = project.url
         }
     }
 
