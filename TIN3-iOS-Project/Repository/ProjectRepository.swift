@@ -29,7 +29,7 @@ class ProjectRepository {
     }
     
     func fetch(completionHandler: @escaping ([Project]) -> Void) {
-        Alamofire.request("http://ios.dev/api/projects").responseArray(keyPath: "data") { (response: DataResponse<[Project]>) -> Void in
+        Alamofire.request("https://www.demian.io/api/projects").responseArray(keyPath: "data") { (response: DataResponse<[Project]>) -> Void in
             if let projectArray = response.result.value {
                 completionHandler(projectArray);
             }
@@ -37,7 +37,10 @@ class ProjectRepository {
     }
     
     func save(_ project: Project, completionHandler: @escaping (Project) -> Void) {
-        Alamofire.request("http://ios.dev/api/projects", method: .post, parameters: project.toJSON(), encoding: JSONEncoding.default).responseObject(keyPath: "data") { (response: DataResponse<Project>) -> Void in
+        Alamofire.request("https://www.demian.io/api/projects", method: .post, parameters: project.toJSON(), encoding: JSONEncoding.default).responseObject(keyPath: "data") { (response: DataResponse<Project>) -> Void in
+            
+            
+            
             if let project = response.result.value {
                 self.projects.append(project)
                 completionHandler(project)

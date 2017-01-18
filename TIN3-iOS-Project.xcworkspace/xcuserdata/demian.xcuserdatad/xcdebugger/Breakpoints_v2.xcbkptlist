@@ -51,5 +51,101 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TIN3-iOS-Project/Repository/ProjectRepository.swift"
+            timestampString = "506442619.70908"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "save(_:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TIN3_iOS_Project.ProjectRepository.save (TIN3_iOS_Project.Project, completionHandler : (TIN3_iOS_Project.Project) -&gt; ()) -&gt; ()"
+                  moduleName = "TIN3-iOS-Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/demian/Documents/Gebruiker/School/HoGent/TI3/iOS/Project/TIN3-iOS-Project/TIN3-iOS-Project/Repository/ProjectRepository.swift"
+                  timestampString = "506442825.403512"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TIN3_iOS_Project.ProjectRepository.(save (TIN3_iOS_Project.Project, completionHandler : (TIN3_iOS_Project.Project) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "TIN3-iOS-Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/demian/Documents/Gebruiker/School/HoGent/TI3/iOS/Project/TIN3-iOS-Project/TIN3-iOS-Project/Repository/ProjectRepository.swift"
+                  timestampString = "506442825.405371"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "144">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TIN3-iOS-Project/Repository/ProjectRepository.swift"
+            timestampString = "506442630.841468"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "save(_:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TIN3-iOS-Project/Repository/ProjectRepository.swift"
+            timestampString = "506442713.477839"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "fetch(completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TIN3-iOS-Project/Repository/ProjectRepository.swift"
+            timestampString = "506442722.082588"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "fetch(completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
