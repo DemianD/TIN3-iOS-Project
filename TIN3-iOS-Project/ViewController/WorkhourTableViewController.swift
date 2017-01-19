@@ -14,41 +14,19 @@ class WorkhourTableViewController: UITableViewController {
         static let WorkhourCellIdentifier = "Workhour"
     }
     
-    var section = [String]()
-    var items = [[Workhour]]()
-    
+    private var section = [String]()
+    private var items = [[Workhour]]()
     
     override func viewWillAppear(_ animated: Bool) {
+        fetch()
         
-        let format = DateFormatter()
-        format.dateFormat = "E dd MMM"
-        
-        WorkhourRepository.instance.all() {
-            for workhour in $0 {
-                if let start = workhour.start {
-                    let startDate = format.string(from: start)
-                    
-                    if !self.section.contains(startDate) {
-                        self.section.append(startDate)
-                    }
-                    
-                    let index = self.section.index(of: startDate)!
-                    
-                    if(self.items.count > index) {
-                        self.items[index].append(workhour)
-                    } else {
-                        self.items.append([workhour])
-                    }
-                }
-            }
-            
-            self.tableView.reloadData()
-        }
         super.viewWillAppear(animated)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        refreshControl?.addTarget(self, action: #selector(self.fetch), for: .valueChanged)
     }
 
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -76,5 +54,36 @@ class WorkhourTableViewController: UITableViewController {
         }
         
         return cell
+    }
+    
+    func fetch() {
+        let format = DateFormatter()
+        format.dateFormat = "E dd MMM"
+        
+        WorkhourRepository.instance.all(withRefresh: true) {
+            self.section = [String]()
+            self.items = [[Workhour]]()
+            
+            for workhour in $0 {
+                if let start = workhour.start {
+                    let startDate = format.string(from: start)
+                    
+                    if !self.section.contains(startDate) {
+                        self.section.append(startDate)
+                    }
+                    
+                    let index = self.section.index(of: startDate)!
+                    
+                    if(self.items.count > index) {
+                        self.items[index].append(workhour)
+                    } else {
+                        self.items.append([workhour])
+                    }
+                }
+            }
+            
+            self.tableView.reloadData()
+            self.refreshControl?.endRefreshing()
+        }
     }
 }

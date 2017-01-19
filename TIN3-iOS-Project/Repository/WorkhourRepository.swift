@@ -12,7 +12,7 @@ import AlamofireObjectMapper
 
 class WorkhourRepository {
     
-    var workhours = [Workhour]()
+    private var workhours = [Workhour]()
     
     private init() {}
     
@@ -27,8 +27,19 @@ class WorkhourRepository {
         }
     }
     
+    func all(withRefresh refresh: Bool, completionHandler: @escaping ([Workhour]) -> Void) {
+        if !refresh {
+            completionHandler(workhours)
+        }
+        
+        fetch() {
+            self.workhours = $0
+            completionHandler($0)
+        }
+    }
+    
     func fetch(completionHandler: @escaping ([Workhour]) -> Void) {
-        Alamofire.request("http://ios.dev/api/projects/workhours").responseArray(keyPath: "data") { (response: DataResponse<[Workhour]>) -> Void in
+        Alamofire.request("https://www.demian.io/api/projects/workhours").responseArray(keyPath: "data") { (response: DataResponse<[Workhour]>) -> Void in
             if let workhoursArray = response.result.value {
                 completionHandler(workhoursArray);
             }
@@ -36,7 +47,7 @@ class WorkhourRepository {
     }
     
     func save(_ workhour: Workhour, completionHandler: @escaping (Workhour) -> Void) {
-        Alamofire.request("http://ios.dev/api/projects/workhours", method: .post, parameters: workhour.toJSON(), encoding: JSONEncoding.default).responseObject(keyPath: "data") { (response: DataResponse<Workhour>) -> Void in
+        Alamofire.request("https://www.demian.io/api/projects/workhours", method: .post, parameters: workhour.toJSON(), encoding: JSONEncoding.default).responseObject(keyPath: "data") { (response: DataResponse<Workhour>) -> Void in
 
             if let workhour = response.result.value {
                 completionHandler(workhour)
