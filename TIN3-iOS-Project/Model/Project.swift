@@ -33,6 +33,7 @@ class Project : Mappable
     var name: String?
     var url: String?
     var colorName: String?
+    var pricePerHour = 0.0
     
     // Computed property
     var color: UIColor {
@@ -57,6 +58,7 @@ class Project : Mappable
         name <- map["name"]
         url <- map["url"]
         colorName <- map["color"]
+        pricePerHour <- map["pricePerHour"]
     }
     
     

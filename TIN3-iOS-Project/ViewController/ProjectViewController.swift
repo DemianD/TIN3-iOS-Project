@@ -12,9 +12,13 @@ class ProjectViewController: UITableViewController {
 
     private struct Storyboard {
         static let ProjectTimerSegue = "ProjectTimerSegue"
+        static let EditProjectSegue = "EditProjectSegue"
     }
     
+    @IBOutlet weak var name: UILabel!
     @IBOutlet weak var url: UILabel!
+    @IBOutlet weak var pricePerHour: UILabel!
+    @IBOutlet weak var colorName: UILabel!
     
     var project: Project?
     
@@ -26,7 +30,10 @@ class ProjectViewController: UITableViewController {
         if let project = self.project {
             self.title = project.name
             
+            name.text = project.name
             url.text = project.url
+            pricePerHour.text = String(project.pricePerHour)
+            colorName.text = project.colorName
         }
     }
     
@@ -36,6 +43,14 @@ class ProjectViewController: UITableViewController {
                 tvc.project = project
             }
         }
+        else if(segue.identifier == Storyboard.EditProjectSegue) {
+            if let epc = segue.destination as? EditProjectTableViewController {
+                epc.project = project
+            }
+        }
     }
-
+    
+    @IBAction func unwindToProject(segue: UIStoryboardSegue) {
+        updateUI()
+    }
 }
