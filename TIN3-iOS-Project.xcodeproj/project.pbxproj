@@ -25,6 +25,7 @@
 		ADB272AB1E2E1E9B00D0FAD4 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB272AA1E2E1E9B00D0FAD4 /* MenuTableViewController.swift */; };
 		ADB272AF1E2E3E5A00D0FAD4 /* ProjectRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB272AE1E2E3E5A00D0FAD4 /* ProjectRepository.swift */; };
 		ADBD53E11E12DBBB00549EFA /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD53E01E12DBBB00549EFA /* ProjectViewController.swift */; };
+		ADDE7C041E30D0FD0042BA8C /* EditWorkhourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDE7C031E30D0FD0042BA8C /* EditWorkhourViewController.swift */; };
 		F3F5C65ADE53E94BF66D96E8 /* Pods_TIN3_iOS_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85AE1A52826DECB84F31A872 /* Pods_TIN3_iOS_Project.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		ADB272AA1E2E1E9B00D0FAD4 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuTableViewController.swift; path = ViewController/MenuTableViewController.swift; sourceTree = "<group>"; };
 		ADB272AE1E2E3E5A00D0FAD4 /* ProjectRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectRepository.swift; path = Repository/ProjectRepository.swift; sourceTree = "<group>"; };
 		ADBD53E01E12DBBB00549EFA /* ProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectViewController.swift; path = ViewController/ProjectViewController.swift; sourceTree = "<group>"; };
+		ADDE7C031E30D0FD0042BA8C /* EditWorkhourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditWorkhourViewController.swift; path = ViewController/EditWorkhourViewController.swift; sourceTree = "<group>"; };
 		B9AF1468C7E58FEFB38377C1 /* Pods-TIN3-iOS-Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TIN3-iOS-Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-TIN3-iOS-Project/Pods-TIN3-iOS-Project.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +86,7 @@
 				ADB272AA1E2E1E9B00D0FAD4 /* MenuTableViewController.swift */,
 				AD5670771E2FA2BE00C0877B /* WorkhourTableViewController.swift */,
 				AD56707B1E2FCFAF00C0877B /* TimerViewController.swift */,
+				ADDE7C031E30D0FD0042BA8C /* EditWorkhourViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 			files = (
 				ADBD53E11E12DBBB00549EFA /* ProjectViewController.swift in Sources */,
 				AD07FB6E1E12D54B0050FC22 /* ProjectsViewController.swift in Sources */,
+				ADDE7C041E30D0FD0042BA8C /* EditWorkhourViewController.swift in Sources */,
 				AD5670801E2FF89E00C0877B /* WorkhourRepository.swift in Sources */,
 				AD5735D91E143A950012C223 /* CreateProjectViewController.swift in Sources */,
 				ADB272AF1E2E3E5A00D0FAD4 /* ProjectRepository.swift in Sources */,
