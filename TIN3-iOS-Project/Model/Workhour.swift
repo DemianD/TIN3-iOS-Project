@@ -35,8 +35,18 @@ class Workhour : Mappable
         description <- map["description"]
         location <- map["location"]
         
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        
         start <- (map["start"], DateTransform())
-        stop <- (map["stop"], DateTransform())
+        
+        if let dateString = map["start"].currentValue as? String, let startFormat = dateFormatter.date(from: dateString) {
+            start = startFormat
+        }
+        
+        if let dateString = map["stop"].currentValue as? String, let stopFormat = dateFormatter.date(from: dateString) {
+            stop = stopFormat
+        }
         
         project_id <- map["project_id"]
         user_id <- map["user_id"]
@@ -45,4 +55,34 @@ class Workhour : Mappable
     func isStarted() -> Bool {
         return start != nil
     }
+    
+    func getStartTime() -> String {
+        let calendar = Calendar.current
+        
+        if let startDate = start {
+            let hour = calendar.component(.hour, from: startDate)
+            let minutes = calendar.component(.minute, from: startDate)
+            
+            return "\(hour):\(minutes)"
+        }
+        else {
+            return ""
+        }
+    }
+    
+    func getStopTime() -> String {
+        let calendar = Calendar.current
+        
+        if let stopDate = stop {
+            let hour = calendar.component(.hour, from: stopDate)
+            let minutes = calendar.component(.minute, from: stopDate)
+            
+            return "\(hour):\(minutes)"
+        }
+        else {
+            return ""
+        }
+    }
+    
+    
 }

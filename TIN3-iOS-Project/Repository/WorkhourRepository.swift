@@ -12,7 +12,28 @@ import AlamofireObjectMapper
 
 class WorkhourRepository {
     
+    var workhours = [Workhour]()
+    
     private init() {}
+    
+    func all(completionHandler: @escaping ([Workhour]) -> Void) {
+        if(workhours.isEmpty) {
+            fetch() {
+                self.workhours = $0
+                completionHandler($0)
+            }
+        } else {
+            completionHandler(workhours)
+        }
+    }
+    
+    func fetch(completionHandler: @escaping ([Workhour]) -> Void) {
+        Alamofire.request("http://ios.dev/api/projects/workhours").responseArray(keyPath: "data") { (response: DataResponse<[Workhour]>) -> Void in
+            if let workhoursArray = response.result.value {
+                completionHandler(workhoursArray);
+            }
+        }
+    }
     
     func save(_ workhour: Workhour, completionHandler: @escaping (Workhour) -> Void) {
         Alamofire.request("http://ios.dev/api/projects/workhours", method: .post, parameters: workhour.toJSON(), encoding: JSONEncoding.default).responseObject(keyPath: "data") { (response: DataResponse<Workhour>) -> Void in

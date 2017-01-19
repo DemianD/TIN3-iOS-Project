@@ -10,6 +10,9 @@ import UIKit
 
 class WorkhourTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var startTime: UILabel!
+    @IBOutlet weak var stopTime: UILabel!
     
+    @IBOutlet weak var _description: UILabel!
+    @IBOutlet weak var location: UILabel!
 }

@@ -14,10 +14,38 @@ class WorkhourTableViewController: UITableViewController {
         static let WorkhourCellIdentifier = "Workhour"
     }
     
-    let section = ["pizza", "deep dish pizza", "calzone"]
-    let items = [["Margarita", "BBQ Chicken", "Pepperoni"], ["sausage", "meat lovers", "veggie lovers"], ["sausage", "chicken pesto", "prawns", "mushrooms"]]
+    var section = [String]()
+    var items = [[Workhour]]()
     
     
+    override func viewWillAppear(_ animated: Bool) {
+        
+        let format = DateFormatter()
+        format.dateFormat = "E dd MMM"
+        
+        WorkhourRepository.instance.all() {
+            for workhour in $0 {
+                if let start = workhour.start {
+                    let startDate = format.string(from: start)
+                    
+                    if !self.section.contains(startDate) {
+                        self.section.append(startDate)
+                    }
+                    
+                    let index = self.section.index(of: startDate)!
+                    
+                    if(self.items.count > index) {
+                        self.items[index].append(workhour)
+                    } else {
+                        self.items.append([workhour])
+                    }
+                }
+            }
+            
+            self.tableView.reloadData()
+        }
+        super.viewWillAppear(animated)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,24 +66,15 @@ class WorkhourTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.WorkhourCellIdentifier, for: indexPath)
 
-       // let item = items[indexPath.section][indexPath.row]
+        let item = items[indexPath.section][indexPath.row]
         
-        /*if let workhourCell = cell as? WorkhourTableViewCell {
-            workhourCell.title.text = item
-        }*/
+        if let workhourCell = cell as? WorkhourTableViewCell {
+            workhourCell.startTime.text = item.getStartTime()
+            workhourCell.stopTime.text = item.getStopTime()
+            workhourCell._description.text = item.description
+            workhourCell.location.text = item.location
+        }
         
         return cell
     }
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
 }
