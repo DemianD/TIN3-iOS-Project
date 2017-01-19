@@ -13,7 +13,7 @@ class EditProjectTableViewController: UITableViewController {
     private struct Storyboard {
         static let ProjectColorSegue = "ProjectColorSegue"
     }
-
+    
     var project: Project!
     
     @IBOutlet weak var name: UITextField!

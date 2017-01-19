@@ -43,11 +43,11 @@ class ProjectRepository {
     func save(_ project: Project, completionHandler: @escaping (Project) -> Void) {
         Alamofire.request("https://www.demian.io/api/projects", method: .post, parameters: project.toJSON(), encoding: JSONEncoding.default).responseObject(keyPath: "data") { (response: DataResponse<Project>) -> Void in
             
-            
-            
-            if let project = response.result.value {
-                self.projects.append(project)
-                completionHandler(project)
+            if let newProject = response.result.value {
+                if(project.id == -1) {
+                    self.projects.append(newProject)
+                }
+                completionHandler(newProject)
             }
         }
     }
