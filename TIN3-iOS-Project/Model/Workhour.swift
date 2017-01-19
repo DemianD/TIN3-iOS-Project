@@ -84,5 +84,8 @@ class Workhour : Mappable
         }
     }
     
+    var project: Project? {
+        return ProjectRepository.instance.find(id)
+    }
     
 }

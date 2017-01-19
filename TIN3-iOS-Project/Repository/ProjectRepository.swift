@@ -28,6 +28,10 @@ class ProjectRepository {
         }
     }
     
+    func find(_ id: Int) -> Project? {
+        return projects.first(where: { $0.id == id })
+    }
+    
     func fetch(completionHandler: @escaping ([Project]) -> Void) {
         Alamofire.request("https://www.demian.io/api/projects").responseArray(keyPath: "data") { (response: DataResponse<[Project]>) -> Void in
             if let projectArray = response.result.value {
