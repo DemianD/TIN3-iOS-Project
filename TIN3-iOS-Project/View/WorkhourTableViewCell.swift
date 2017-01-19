@@ -15,4 +15,6 @@ class WorkhourTableViewCell: UITableViewCell {
     
     @IBOutlet weak var _description: UILabel!
     @IBOutlet weak var location: UILabel!
+    
+    @IBOutlet weak var horizontalLine: UIView!
 }

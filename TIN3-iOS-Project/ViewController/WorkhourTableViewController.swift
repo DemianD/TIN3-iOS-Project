@@ -51,6 +51,10 @@ class WorkhourTableViewController: UITableViewController {
             workhourCell.stopTime.text = item.getStopTime()
             workhourCell._description.text = item.description
             workhourCell.location.text = item.location
+            
+            if let project = item.project {
+                workhourCell.horizontalLine.backgroundColor = project.color
+            }
         }
         
         return cell
