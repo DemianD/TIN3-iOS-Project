@@ -10,7 +10,6 @@
 		AD07FB6A1E12D53C0050FC22 /* ProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD07FB691E12D53C0050FC22 /* ProjectTableViewCell.swift */; };
 		AD07FB6C1E12D5440050FC22 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD07FB6B1E12D5440050FC22 /* Project.swift */; };
 		AD07FB6E1E12D54B0050FC22 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD07FB6D1E12D54B0050FC22 /* ProjectsViewController.swift */; };
-		AD52C15F1E14259F005096DA /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD52C15E1E14259F005096DA /* Status.swift */; };
 		AD5670781E2FA2BE00C0877B /* WorkhourTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5670771E2FA2BE00C0877B /* WorkhourTableViewController.swift */; };
 		AD56707A1E2FA7EC00C0877B /* WorkhourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5670791E2FA7EC00C0877B /* WorkhourTableViewCell.swift */; };
 		AD56707C1E2FCFAF00C0877B /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD56707B1E2FCFAF00C0877B /* TimerViewController.swift */; };
@@ -27,6 +26,8 @@
 		ADDE7C041E30D0FD0042BA8C /* EditWorkhourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDE7C031E30D0FD0042BA8C /* EditWorkhourViewController.swift */; };
 		ADDE7C061E311B340042BA8C /* EditProjectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDE7C051E311B340042BA8C /* EditProjectTableViewController.swift */; };
 		ADDE7C081E3127950042BA8C /* ProjectColorCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDE7C071E3127950042BA8C /* ProjectColorCollectionViewController.swift */; };
+		ADED21441E31C88600F5EF1A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADED21431E31C88600F5EF1A /* Colors.swift */; };
+		ADED21461E31CACC00F5EF1A /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADED21451E31CACC00F5EF1A /* DateManager.swift */; };
 		F3F5C65ADE53E94BF66D96E8 /* Pods_TIN3_iOS_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85AE1A52826DECB84F31A872 /* Pods_TIN3_iOS_Project.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +37,6 @@
 		AD07FB691E12D53C0050FC22 /* ProjectTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectTableViewCell.swift; path = View/ProjectTableViewCell.swift; sourceTree = "<group>"; };
 		AD07FB6B1E12D5440050FC22 /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Project.swift; path = Model/Project.swift; sourceTree = "<group>"; };
 		AD07FB6D1E12D54B0050FC22 /* ProjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectsViewController.swift; path = ViewController/ProjectsViewController.swift; sourceTree = "<group>"; };
-		AD52C15E1E14259F005096DA /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Status.swift; path = Model/Status.swift; sourceTree = "<group>"; };
 		AD5670771E2FA2BE00C0877B /* WorkhourTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkhourTableViewController.swift; path = ViewController/WorkhourTableViewController.swift; sourceTree = "<group>"; };
 		AD5670791E2FA7EC00C0877B /* WorkhourTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkhourTableViewCell.swift; path = View/WorkhourTableViewCell.swift; sourceTree = "<group>"; };
 		AD56707B1E2FCFAF00C0877B /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimerViewController.swift; path = ViewController/TimerViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +55,8 @@
 		ADDE7C031E30D0FD0042BA8C /* EditWorkhourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditWorkhourViewController.swift; path = ViewController/EditWorkhourViewController.swift; sourceTree = "<group>"; };
 		ADDE7C051E311B340042BA8C /* EditProjectTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditProjectTableViewController.swift; path = ViewController/EditProjectTableViewController.swift; sourceTree = "<group>"; };
 		ADDE7C071E3127950042BA8C /* ProjectColorCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectColorCollectionViewController.swift; path = ViewController/ProjectColorCollectionViewController.swift; sourceTree = "<group>"; };
+		ADED21431E31C88600F5EF1A /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		ADED21451E31CACC00F5EF1A /* DateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateManager.swift; path = View/DateManager.swift; sourceTree = "<group>"; };
 		B9AF1468C7E58FEFB38377C1 /* Pods-TIN3-iOS-Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TIN3-iOS-Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-TIN3-iOS-Project/Pods-TIN3-iOS-Project.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				AD07FB6B1E12D5440050FC22 /* Project.swift */,
-				AD52C15E1E14259F005096DA /* Status.swift */,
 				AD56707D1E2FD1AA00C0877B /* Workhour.swift */,
 			);
 			name = Model;
@@ -135,6 +136,7 @@
 		AD598BD31E0FDC6800A488D4 /* TIN3-iOS-Project */ = {
 			isa = PBXGroup;
 			children = (
+				ADED21421E31C86C00F5EF1A /* Utils */,
 				ADB272AD1E2E3E3400D0FAD4 /* Repository */,
 				ADB272AC1E2E2D1200D0FAD4 /* Service */,
 				AD07FB661E12D45E0050FC22 /* View */,
@@ -179,6 +181,15 @@
 				AD598BE01E0FDC6800A488D4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ADED21421E31C86C00F5EF1A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				ADED21431E31C88600F5EF1A /* Colors.swift */,
+				ADED21451E31CACC00F5EF1A /* DateManager.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 		B7A6B4E660561F414544E0E5 /* Frameworks */ = {
@@ -314,13 +325,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADBD53E11E12DBBB00549EFA /* ProjectViewController.swift in Sources */,
+				ADED21441E31C88600F5EF1A /* Colors.swift in Sources */,
 				AD07FB6E1E12D54B0050FC22 /* ProjectsViewController.swift in Sources */,
 				ADDE7C041E30D0FD0042BA8C /* EditWorkhourViewController.swift in Sources */,
 				AD5670801E2FF89E00C0877B /* WorkhourRepository.swift in Sources */,
 				AD5735D91E143A950012C223 /* CreateProjectViewController.swift in Sources */,
 				ADB272AF1E2E3E5A00D0FAD4 /* ProjectRepository.swift in Sources */,
+				ADED21461E31CACC00F5EF1A /* DateManager.swift in Sources */,
 				AD56707E1E2FD1AA00C0877B /* Workhour.swift in Sources */,
-				AD52C15F1E14259F005096DA /* Status.swift in Sources */,
 				ADDE7C081E3127950042BA8C /* ProjectColorCollectionViewController.swift in Sources */,
 				AD598BD51E0FDC6800A488D4 /* AppDelegate.swift in Sources */,
 				AD07FB6A1E12D53C0050FC22 /* ProjectTableViewCell.swift in Sources */,

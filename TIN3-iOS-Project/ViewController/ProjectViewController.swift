@@ -28,11 +28,11 @@ class ProjectViewController: UITableViewController {
     
     private func updateUI() {
         if let project = self.project {
-            self.title = project.name
+            title = project.name
             
             name.text = project.name
             url.text = project.url
-            pricePerHour.text = String(project.pricePerHour)
+            pricePerHour.text = String(format: "%.2d", project.pricePerHour)
             colorName.text = project.colorName
         }
     }

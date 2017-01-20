@@ -52,6 +52,5 @@ class ProjectRepository {
         }
     }
     
-    //Source: https://krakendev.io/blog/the-right-way-to-write-a-singleton
     static let instance = ProjectRepository()
 }

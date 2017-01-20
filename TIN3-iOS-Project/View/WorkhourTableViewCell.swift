@@ -17,4 +17,24 @@ class WorkhourTableViewCell: UITableViewCell {
     @IBOutlet weak var location: UILabel!
     
     @IBOutlet weak var horizontalLine: UIView!
+    
+    var workhour: Workhour! {
+        didSet {
+            updateUI()
+        }
+    }
+    
+    private func updateUI() {
+        _description.text = workhour.description
+        location.text = workhour.location
+        
+        startTime.text = workhour.getStartTime()
+        stopTime.text = workhour.getStopTime()
+        
+        if let project = workhour.project {
+            horizontalLine.backgroundColor = project.color
+        } else {
+            horizontalLine.backgroundColor = Colors.standard
+        }
+    }
 }

@@ -16,20 +16,20 @@ class ProjectsViewController: UITableViewController
         static let CreateProjectSegue = "CreateProjectSegue"
     }
     
-    var projects = Array<Project>() {
+    var projects = [Project]() {
         didSet {
             tableView.reloadData()
         }
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
+    override func viewDidLoad() {
         projects.removeAll();
         
-        ProjectRepository.instance.all { result in
-            self.projects = result
+        ProjectRepository.instance.all {
+            self.projects = $0
         }
+        
+        super.viewDidLoad()
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -40,8 +40,6 @@ class ProjectsViewController: UITableViewController
         return projects.count
     }
 
-    // Get the template cell, we are using a struct for the identifier because it's cleaner.
-    // Seen in Stanford University iOS videos
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.ProjectCellIdentifier, for: indexPath)
         

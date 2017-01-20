@@ -44,38 +44,30 @@ class WorkhourTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.WorkhourCellIdentifier, for: indexPath)
 
-        let item = items[indexPath.section][indexPath.row]
+        let workhour = items[indexPath.section][indexPath.row]
         
         if let workhourCell = cell as? WorkhourTableViewCell {
-            workhourCell.startTime.text = item.getStartTime()
-            workhourCell.stopTime.text = item.getStopTime()
-            workhourCell._description.text = item.description
-            workhourCell.location.text = item.location
-            
-            if let project = item.project {
-                workhourCell.horizontalLine.backgroundColor = project.color
-            }
+            workhourCell.workhour = workhour
         }
         
         return cell
     }
     
     func fetch() {
-        let format = DateFormatter()
-        format.dateFormat = "E dd MMM"
-        
         WorkhourRepository.instance.all(withRefresh: true) {
             self.section = [String]()
             self.items = [[Workhour]]()
             
             for workhour in $0 {
                 if let start = workhour.start {
-                    let startDate = format.string(from: start)
+                    // Eerst een sectie maken, en als die niet bestaat toevoegen
+                    let startDate = DateManager.instance.convertToSectionName(start)
                     
                     if !self.section.contains(startDate) {
                         self.section.append(startDate)
                     }
                     
+                    // De sectie opvragen
                     let index = self.section.index(of: startDate)!
                     
                     if(self.items.count > index) {

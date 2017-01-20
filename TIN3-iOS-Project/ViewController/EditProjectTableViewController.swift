@@ -54,7 +54,6 @@ class EditProjectTableViewController: UITableViewController {
     }
     
     @IBAction func unwindFromProjectColor(segue: UIStoryboardSegue) {
-        // Only update the color name
-        colorName.text = project.colorName
+        colorName.text = project.colorName // Only update the color name
     }
 }

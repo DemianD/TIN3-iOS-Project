@@ -8,9 +8,6 @@
 
 import UIKit
 
-// Source: http://stackoverflow.com/questions/28628225/how-do-you-save-local-storage-data-in-a-swift-application
-// Source: http://stackoverflow.com/questions/31203241/how-to-use-nsuserdefaults-in-swift
-
 class TimerViewController: UITableViewController, UIPickerViewDelegate, UIPickerViewDataSource
 {
     @IBOutlet weak var toggle: UIButton!
@@ -23,26 +20,29 @@ class TimerViewController: UITableViewController, UIPickerViewDelegate, UIPicker
         static let currentWorkhour = "currentWorkhour"
     }
     
-    private var items = [Project]()
+    private var items = [Project]() {
+        didSet {
+            projectPicker.reloadAllComponents()
+        }
+    }
     
-    override func viewDidLoad() {
+    override func viewWillAppear(_ animated: Bool) {
         ProjectRepository.instance.all { projects in
             self.items = projects
             self.updateUI()
         }
         
-        super.viewDidLoad()
+        super.viewWillAppear(animated)
     }
     
     func updateUI() {
-        projectPicker.reloadAllComponents()
         
         // Indien er een werkuur bezig is, dan gaan we de gegevens opnieuw invullen
         if let currentWorkhour = loadWorkhour() {
             _description.text = currentWorkhour.description
             location.text = currentWorkhour.location
             
-            let currentWorkhourProjectIndex = items.index(where: { $0.id == currentWorkhour.id }) ?? 0
+            let currentWorkhourProjectIndex = items.index(where: { $0.id == currentWorkhour.project_id }) ?? 0
             projectPicker.selectRow(currentWorkhourProjectIndex, inComponent: 0, animated: false)
             
             toggle.setTitle("Stop", for: .normal)
@@ -52,6 +52,8 @@ class TimerViewController: UITableViewController, UIPickerViewDelegate, UIPicker
             
             toggle.setTitle("Start", for: .normal)
         }
+        
+        tabBarController?.tabBar.items?.last?.badgeValue = "00:01"
     }
 
     @IBAction func toggleTimer(_ sender: UIButton) {
@@ -73,6 +75,7 @@ class TimerViewController: UITableViewController, UIPickerViewDelegate, UIPicker
         var workhour = Workhour()
         
         if let currentWorkhour = defaults.string(forKey: keys.currentWorkhour) {
+            print(currentWorkhour)
             workhour = Workhour(JSONString: currentWorkhour)!
         }
         
@@ -121,5 +124,10 @@ class TimerViewController: UITableViewController, UIPickerViewDelegate, UIPicker
     
     public func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return items[row].name
+    }
+    
+    // Source: gezien tijdens de les
+    @IBAction func hideKeyboard(_ sender: UITextField) {
+        sender.resignFirstResponder()
     }
 }

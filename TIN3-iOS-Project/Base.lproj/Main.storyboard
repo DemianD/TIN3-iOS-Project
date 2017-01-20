@@ -19,28 +19,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Project" textLabel="Di1-AX-55F" detailTextLabel="WBN-Ts-GvL" style="IBUITableViewCellStyleSubtitle" id="9GW-Cm-kgp" customClass="ProjectTableViewCell" customModule="TIN3_iOS_Project" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Project" textLabel="Di1-AX-55F" style="IBUITableViewCellStyleDefault" id="9GW-Cm-kgp" customClass="ProjectTableViewCell" customModule="TIN3_iOS_Project" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="320" height="52"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9GW-Cm-kgp" id="dHt-8Z-21j">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="51.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="51"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KP4-Ea-egF" customClass="Circle" customModule="TIN3_iOS_Project" customModuleProvider="target">
-                                            <rect key="frame" x="7" y="13" width="10" height="10"/>
+                                            <rect key="frame" x="7" y="20" width="10" height="10"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </view>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Di1-AX-55F">
-                                            <rect key="frame" x="24" y="9" width="33.5" height="20.5"/>
+                                            <rect key="frame" x="24" y="0.0" width="261" height="51"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WBN-Ts-GvL">
-                                            <rect key="frame" x="24" y="29.5" width="44" height="14.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -50,7 +43,6 @@
                                 <edgeInsets key="layoutMargins" top="8" left="24" bottom="8" right="8"/>
                                 <connections>
                                     <outlet property="statusIcon" destination="KP4-Ea-egF" id="3jB-xl-Egz"/>
-                                    <outlet property="statusMessage" destination="WBN-Ts-GvL" id="iUx-vX-4Ro"/>
                                     <outlet property="title" destination="Di1-AX-55F" id="G2r-eZ-imt"/>
                                     <segue destination="Z0g-EH-lMO" kind="show" identifier="ShowProjectSegue" id="U36-tD-G7q"/>
                                 </connections>
@@ -564,6 +556,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="hideKeyboard:" destination="d5J-h2-IcF" eventType="editingDidEndOnExit" id="gPT-Yg-MUP"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -586,6 +581,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="hideKeyboard:" destination="d5J-h2-IcF" eventType="editingDidEndOnExit" id="bPD-Pe-eNO"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
