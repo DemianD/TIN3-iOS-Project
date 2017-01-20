@@ -38,12 +38,7 @@ class ProjectViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == Storyboard.ProjectTimerSegue) {
-            if let tvc = segue.destination as? TimerViewController {
-                tvc.project = project
-            }
-        }
-        else if(segue.identifier == Storyboard.EditProjectSegue) {
+        if(segue.identifier == Storyboard.EditProjectSegue) {
             if let epc = segue.destination as? EditProjectTableViewController {
                 epc.project = project
             }
