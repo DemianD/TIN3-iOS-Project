@@ -278,22 +278,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TIN3-iOS-Project/Model/Workhour.swift"
-            timestampString = "506588871.099209"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "getStopTime()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -810,7 +794,7 @@
                   moduleName = "TIN3-iOS-Project"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/demian/Documents/Gebruiker/School/HoGent/TI3/iOS/Project/TIN3-iOS-Project/TIN3-iOS-Project/Repository/ProjectRepository.swift"
-                  timestampString = "506589207.738574"
+                  timestampString = "506596112.387231"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "32"
@@ -825,7 +809,7 @@
                   moduleName = "TIN3-iOS-Project"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/demian/Documents/Gebruiker/School/HoGent/TI3/iOS/Project/TIN3-iOS-Project/TIN3-iOS-Project/Repository/ProjectRepository.swift"
-                  timestampString = "506589207.740519"
+                  timestampString = "506596112.389506"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "32"
@@ -874,7 +858,7 @@
                   moduleName = "TIN3-iOS-Project"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/demian/Documents/Gebruiker/School/HoGent/TI3/iOS/Project/TIN3-iOS-Project/TIN3-iOS-Project/View/DateManager.swift"
-                  timestampString = "506589207.748226"
+                  timestampString = "506596112.40467"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "23"
@@ -889,7 +873,7 @@
                   moduleName = "TIN3-iOS-Project"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/demian/Documents/Gebruiker/School/HoGent/TI3/iOS/Project/TIN3-iOS-Project/TIN3-iOS-Project/View/DateManager.swift"
-                  timestampString = "506589207.750342"
+                  timestampString = "506596112.408046"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "23"

@@ -26,6 +26,15 @@ class DateManager {
         return nil
     }
     
+    func convertTo(format: String, date: Date?) -> String {
+        dateFormatter.dateFormat = format
+        
+        if let uDate = date {
+            return dateFormatter.string(from: uDate)
+        }
+        return "-"
+    }
+    
     func convertToTimeMinutes(_ date: Date?) -> String {
         if let date = date {
             let hour = intToString(calendar.component(.hour, from: date))

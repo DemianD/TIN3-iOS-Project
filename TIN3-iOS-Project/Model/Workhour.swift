@@ -59,11 +59,26 @@ class Workhour : Mappable
         return start != nil
     }
     
+    func getDay() -> String {
+        return DateManager.instance.convertTo(format: "DD-MM-YYYY", date:start)
+    }
+    
     func getStartTime() -> String {
         return DateManager.instance.convertToTimeMinutes(start)
     }
     
     func getStopTime() -> String {
         return DateManager.instance.convertToTimeMinutes(stop)
+    }
+    
+    func getInterval() -> String {
+        if let startDate = start, let stopDate = stop {
+            return DateManager.instance.convertTimeInterval(stopDate.timeIntervalSince(startDate))
+        }
+        return "-"
+    }
+    
+    func csvRow() -> String {
+        return "\(getDay());\(getStartTime());\(getStopTime());\(getInterval())\n"
     }
 }
