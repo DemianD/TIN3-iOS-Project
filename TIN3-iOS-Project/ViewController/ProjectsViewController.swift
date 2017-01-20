@@ -22,7 +22,7 @@ class ProjectsViewController: UITableViewController
         }
     }
     
-    override func viewDidLoad() {
+    override func viewWillAppear(_ animated: Bool) {
         projects.removeAll();
         
         ProjectRepository.instance.all {
