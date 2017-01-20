@@ -47,6 +47,20 @@ class DateManager {
         return "-"
     }
     
+    func convertTimeInterval(_ timeInterval: TimeInterval) -> String {
+        let seconds = Int(timeInterval)
+        
+        if timeInterval < 60.0 {
+            return String(format: "%.0f sec", timeInterval)
+        }
+        else {
+            let hours = seconds / 3600
+            let minutes = (seconds / 60) % 60
+            
+            return String(format: "%02d:%02d", hours, minutes)
+        }
+    }
+    
     func intToString(_ int: Int) -> String {
         return String(format: "%02d", int)
     }

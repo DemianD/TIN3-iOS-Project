@@ -28,6 +28,7 @@
 		ADDE7C081E3127950042BA8C /* ProjectColorCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDE7C071E3127950042BA8C /* ProjectColorCollectionViewController.swift */; };
 		ADED21441E31C88600F5EF1A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADED21431E31C88600F5EF1A /* Colors.swift */; };
 		ADED21461E31CACC00F5EF1A /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADED21451E31CACC00F5EF1A /* DateManager.swift */; };
+		ADED21481E31DA8B00F5EF1A /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADED21471E31DA8B00F5EF1A /* TimerManager.swift */; };
 		F3F5C65ADE53E94BF66D96E8 /* Pods_TIN3_iOS_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85AE1A52826DECB84F31A872 /* Pods_TIN3_iOS_Project.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		ADDE7C071E3127950042BA8C /* ProjectColorCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectColorCollectionViewController.swift; path = ViewController/ProjectColorCollectionViewController.swift; sourceTree = "<group>"; };
 		ADED21431E31C88600F5EF1A /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		ADED21451E31CACC00F5EF1A /* DateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateManager.swift; path = View/DateManager.swift; sourceTree = "<group>"; };
+		ADED21471E31DA8B00F5EF1A /* TimerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimerManager.swift; path = Model/TimerManager.swift; sourceTree = "<group>"; };
 		B9AF1468C7E58FEFB38377C1 /* Pods-TIN3-iOS-Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TIN3-iOS-Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-TIN3-iOS-Project/Pods-TIN3-iOS-Project.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -188,6 +190,7 @@
 			children = (
 				ADED21431E31C88600F5EF1A /* Colors.swift */,
 				ADED21451E31CACC00F5EF1A /* DateManager.swift */,
+				ADED21471E31DA8B00F5EF1A /* TimerManager.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				AD5735D91E143A950012C223 /* CreateProjectViewController.swift in Sources */,
 				ADB272AF1E2E3E5A00D0FAD4 /* ProjectRepository.swift in Sources */,
 				ADED21461E31CACC00F5EF1A /* DateManager.swift in Sources */,
+				ADED21481E31DA8B00F5EF1A /* TimerManager.swift in Sources */,
 				AD56707E1E2FD1AA00C0877B /* Workhour.swift in Sources */,
 				ADDE7C081E3127950042BA8C /* ProjectColorCollectionViewController.swift in Sources */,
 				AD598BD51E0FDC6800A488D4 /* AppDelegate.swift in Sources */,

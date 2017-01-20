@@ -42,10 +42,11 @@ class Workhour : Mappable
         project_id <- map["project_id"]
         user_id <- map["user_id"]
         
-        // If we don't do this, it won't be mapped when saving..
+        // Map when it's a timestamp
         start <- (map["start"], DateTransform())
         stop <- (map["stop"], DateTransform())
         
+        // Map when it's a MysqlDate
         if let mysqlDate = DateManager.instance.convertMysql(map["start"].currentValue) {
             start = mysqlDate
         }

@@ -26,6 +26,14 @@ class TimerViewController: UITableViewController, UIPickerViewDelegate, UIPicker
         }
     }
     
+    private let timer = TimerManager.instance
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        timer.tabBarItem = tabBarController?.tabBar.items?[1]
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         ProjectRepository.instance.all { projects in
             self.items = projects
@@ -36,9 +44,7 @@ class TimerViewController: UITableViewController, UIPickerViewDelegate, UIPicker
     }
     
     func updateUI() {
-        
-        // Indien er een werkuur bezig is, dan gaan we de gegevens opnieuw invullen
-        if let currentWorkhour = loadWorkhour() {
+        if let currentWorkhour = timer.fetch() {
             _description.text = currentWorkhour.description
             location.text = currentWorkhour.location
             
@@ -52,64 +58,12 @@ class TimerViewController: UITableViewController, UIPickerViewDelegate, UIPicker
             
             toggle.setTitle("Start", for: .normal)
         }
-        
-        tabBarController?.tabBar.items?.last?.badgeValue = "00:01"
     }
 
     @IBAction func toggleTimer(_ sender: UIButton) {
-        let currentWorkhour = firstOrNew()
-        
-        if currentWorkhour.isStarted() {
-            currentWorkhour.stop = Date()
-            save(currentWorkhour)
-        } else {
-            currentWorkhour.start = Date()
-            saveLocal(currentWorkhour)
-        }
-        
-        updateUI()
-    }
-    
-    func firstOrNew() -> Workhour {
-        let defaults = UserDefaults.standard
-        var workhour = Workhour()
-        
-        if let currentWorkhour = defaults.string(forKey: keys.currentWorkhour) {
-            print(currentWorkhour)
-            workhour = Workhour(JSONString: currentWorkhour)!
-        }
-        
-        // Wanneer men start/stopt zullen we alle huidige waardes (beschrijving, locatie, project) overschrijven
-        workhour.project_id = items[projectPicker.selectedRow(inComponent: 0)].id
-        workhour.description = _description.text
-        workhour.location = location.text
+        let project_id = items[projectPicker.selectedRow(inComponent: 0)].id
 
-        return workhour
-    }
-    
-    func loadWorkhour() -> Workhour? {
-        let defaults = UserDefaults.standard
-
-        if let currentWorkhour = defaults.string(forKey: keys.currentWorkhour) {
-            return Workhour(JSONString: currentWorkhour)
-        }
-        return nil
-    }
-    
-    func save(_ workhour: Workhour) -> Void {
-        print(workhour.toJSON())
-        
-        WorkhourRepository.instance.save(workhour) { _ in
-            self.empty()
-        }
-    }
-    
-    func saveLocal(_ workhour: Workhour) -> Void {
-        UserDefaults.standard.set(workhour.toJSONString(), forKey: keys.currentWorkhour)
-    }
-    
-    func empty() {
-        UserDefaults.standard.removeObject(forKey: keys.currentWorkhour)
+        timer.toggle(description: _description.text, location: location.text, project_id: project_id)
         
         updateUI()
     }
@@ -126,7 +80,6 @@ class TimerViewController: UITableViewController, UIPickerViewDelegate, UIPicker
         return items[row].name
     }
     
-    // Source: gezien tijdens de les
     @IBAction func hideKeyboard(_ sender: UITextField) {
         sender.resignFirstResponder()
     }
