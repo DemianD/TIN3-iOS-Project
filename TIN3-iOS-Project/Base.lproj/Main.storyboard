@@ -71,7 +71,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tWB-5a-ReF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1760.8" y="62.518740629685162"/>
+            <point key="canvasLocation" x="1809.375" y="-64.436619718309856"/>
         </scene>
         <!--Nieuwe activiteit-->
         <scene sceneID="9Gp-f1-adf">
@@ -102,7 +102,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G2X-gh-kgm" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="VeA-uV-pjw" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2543" y="-571"/>
+            <point key="canvasLocation" x="3540" y="-571.47887323943667"/>
         </scene>
         <!--Projectnaam-->
         <scene sceneID="8ea-ec-sRO">
@@ -299,7 +299,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ECy-Qr-Bd2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3568.125" y="397.18309859154931"/>
+            <point key="canvasLocation" x="4565.625" y="397.18309859154931"/>
         </scene>
         <!--Workhour Table View Controller-->
         <scene sceneID="Gm2-tO-Yhk">
@@ -405,7 +405,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q5J-tW-hog" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3416" y="-81"/>
+            <point key="canvasLocation" x="4411.875" y="-81.338028169014081"/>
         </scene>
         <!--Edit Workhour View Controller-->
         <scene sceneID="Ah7-FH-34k">
@@ -531,7 +531,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m6v-Hv-9DW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4256" y="-81"/>
+            <point key="canvasLocation" x="5251.875" y="-81.338028169014081"/>
         </scene>
         <!--Timer-->
         <scene sceneID="JcW-Lf-868">
@@ -657,111 +657,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Werkuren" id="YOl-F7-wXI"/>
+                    <tabBarItem key="tabBarItem" title="Werkuren" image="TabBar_Workhours" selectedImage="TabBar_Workhours" id="YOl-F7-wXI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x4c-2k-GPd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-51" y="1591"/>
-        </scene>
-        <!--Menu Table View Controller-->
-        <scene sceneID="uif-xS-vI7">
-            <objects>
-                <tableViewController id="Hz0-ps-qyE" customClass="MenuTableViewController" customModule="TIN3_iOS_Project" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="KnE-WA-jFS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <sections>
-                            <tableViewSection headerTitle="Home" id="MyD-aJ-s8h">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="Ets-P9-0Zq" style="IBUITableViewCellStyleDefault" id="csu-iF-6iX">
-                                        <rect key="frame" x="0.0" y="56" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="csu-iF-6iX" id="Tva-kw-Lrr">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Sites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ets-P9-0Zq">
-                                                    <rect key="frame" x="15" y="0.0" width="290" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="46V-dd-b9X" kind="show" identifier="SitesSegue" id="Nhc-M1-o2S"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                            <tableViewSection headerTitle="Werkuren" id="S6n-SP-yGS">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="dVY-KS-DuZ" style="IBUITableViewCellStyleDefault" id="mGG-zO-dSM">
-                                        <rect key="frame" x="0.0" y="157" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mGG-zO-dSM" id="LNe-8w-I2V">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Overzicht" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dVY-KS-DuZ">
-                                                    <rect key="frame" x="15" y="0.0" width="290" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="dJt-VH-jaf" style="IBUITableViewCellStyleDefault" id="4w3-aI-oOp">
-                                        <rect key="frame" x="0.0" y="201" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4w3-aI-oOp" id="fgC-3z-ZCK">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Exporteer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dJt-VH-jaf">
-                                                    <rect key="frame" x="15" y="0.0" width="290" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="jcl-CA-La9" style="IBUITableViewCellStyleDefault" id="YAi-lN-vse">
-                                        <rect key="frame" x="0.0" y="245" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YAi-lN-vse" id="6BD-Ld-drH">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jcl-CA-La9">
-                                                    <rect key="frame" x="15" y="0.0" width="290" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="Hz0-ps-qyE" id="JRi-uu-Fl9"/>
-                            <outlet property="delegate" destination="Hz0-ps-qyE" id="hwp-Nq-z7K"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="Bmt-ai-h2c"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="38H-fh-pUr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="888.79999999999995" y="62.518740629685162"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="DBD-u9-C7G">
@@ -773,33 +673,14 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="w9V-5M-ns6" kind="relationship" relationship="viewControllers" id="Z8J-3r-zHZ"/>
-                        <segue destination="oeo-O5-Cs0" kind="relationship" relationship="viewControllers" id="CJu-Ou-K14"/>
+                        <segue destination="wYM-uH-9Ed" kind="relationship" relationship="viewControllers" id="XqY-CF-KNh"/>
                         <segue destination="V0Y-P1-Pjb" kind="relationship" relationship="viewControllers" id="EIQ-5d-jSq"/>
+                        <segue destination="oeo-O5-Cs0" kind="relationship" relationship="viewControllers" id="CJu-Ou-K14"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RC8-Eq-O1b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1121" y="799"/>
-        </scene>
-        <!--Projecten-->
-        <scene sceneID="45E-11-18Q">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w9V-5M-ns6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Projecten" id="QqH-MN-Z0p"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PLT-XW-QzR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Hz0-ps-qyE" kind="relationship" relationship="rootViewController" id="LSH-u7-N9X"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="egJ-lu-00d" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-50.399999999999999" y="62.518740629685162"/>
         </scene>
         <!--Bewerk Project-->
         <scene sceneID="wEM-hf-hAz">
@@ -985,7 +866,7 @@
         <scene sceneID="zdM-8C-eq6">
             <objects>
                 <collectionViewController id="ln4-fk-U7l" customClass="ProjectColorCollectionViewController" customModule="TIN3_iOS_Project" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="x2m-42-mNe">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="x2m-42-mNe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1024,11 +905,11 @@
             </objects>
             <point key="canvasLocation" x="5253.75" y="665.49295774647885"/>
         </scene>
-        <!--Item-->
+        <!--Timer-->
         <scene sceneID="nd2-Gc-K00">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="V0Y-P1-Pjb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="mJn-53-0yd"/>
+                    <tabBarItem key="tabBarItem" title="Timer" image="TabBar_Timer" selectedImage="TabBar_Timer" id="mJn-53-0yd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zGZ-G8-Jzw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -1043,5 +924,29 @@
             </objects>
             <point key="canvasLocation" x="918.75" y="798.59154929577471"/>
         </scene>
+        <!--Projecten-->
+        <scene sceneID="Ign-Mc-oqH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wYM-uH-9Ed" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Projecten" image="TabBar_Projects" selectedImage="TabBar_Projects" id="gsB-2V-Y2Z"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nq4-Fl-HLa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="46V-dd-b9X" kind="relationship" relationship="rootViewController" id="Ohb-EB-8oi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fy9-vZ-YfT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="203" y="-64"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="TabBar_Projects" width="25" height="25"/>
+        <image name="TabBar_Timer" width="25" height="25"/>
+        <image name="TabBar_Workhours" width="25" height="25"/>
+    </resources>
 </document>
