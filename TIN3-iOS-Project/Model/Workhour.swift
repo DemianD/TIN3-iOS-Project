@@ -39,6 +39,7 @@ class Workhour : Mappable
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         
         start <- (map["start"], DateTransform())
+        stop <- (map["stop"], DateTransform())
         
         if let dateString = map["start"].currentValue as? String, let startFormat = dateFormatter.date(from: dateString) {
             start = startFormat
@@ -85,7 +86,7 @@ class Workhour : Mappable
     }
     
     var project: Project? {
-        return ProjectRepository.instance.find(id)
+        return ProjectRepository.instance.find(project_id)
     }
     
 }
