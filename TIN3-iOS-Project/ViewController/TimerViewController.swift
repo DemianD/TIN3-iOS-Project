@@ -30,8 +30,6 @@ class TimerViewController: UITableViewController, UIPickerViewDelegate, UIPicker
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        timer.tabBarItem = tabBarController?.tabBar.items?[1]
     }
     
     override func viewWillAppear(_ animated: Bool) {

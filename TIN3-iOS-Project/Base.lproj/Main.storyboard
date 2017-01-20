@@ -661,10 +661,10 @@
             </objects>
             <point key="canvasLocation" x="-51" y="1591"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Menu View Controller-->
         <scene sceneID="DBD-u9-C7G">
             <objects>
-                <tabBarController id="txl-uq-bn4" sceneMemberID="viewController">
+                <tabBarController id="txl-uq-bn4" customClass="MenuViewController" customModule="TIN3_iOS_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="1Pc-3v-yIx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

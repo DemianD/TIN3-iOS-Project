@@ -29,6 +29,7 @@
 		ADED21441E31C88600F5EF1A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADED21431E31C88600F5EF1A /* Colors.swift */; };
 		ADED21461E31CACC00F5EF1A /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADED21451E31CACC00F5EF1A /* DateManager.swift */; };
 		ADED21481E31DA8B00F5EF1A /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADED21471E31DA8B00F5EF1A /* TimerManager.swift */; };
+		ADED214A1E31FB1D00F5EF1A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADED21491E31FB1D00F5EF1A /* MenuViewController.swift */; };
 		F3F5C65ADE53E94BF66D96E8 /* Pods_TIN3_iOS_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85AE1A52826DECB84F31A872 /* Pods_TIN3_iOS_Project.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		ADED21431E31C88600F5EF1A /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		ADED21451E31CACC00F5EF1A /* DateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateManager.swift; path = View/DateManager.swift; sourceTree = "<group>"; };
 		ADED21471E31DA8B00F5EF1A /* TimerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimerManager.swift; path = Model/TimerManager.swift; sourceTree = "<group>"; };
+		ADED21491E31FB1D00F5EF1A /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = ViewController/MenuViewController.swift; sourceTree = "<group>"; };
 		B9AF1468C7E58FEFB38377C1 /* Pods-TIN3-iOS-Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TIN3-iOS-Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-TIN3-iOS-Project/Pods-TIN3-iOS-Project.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +96,7 @@
 				ADDE7C031E30D0FD0042BA8C /* EditWorkhourViewController.swift */,
 				ADDE7C051E311B340042BA8C /* EditProjectTableViewController.swift */,
 				ADDE7C071E3127950042BA8C /* ProjectColorCollectionViewController.swift */,
+				ADED21491E31FB1D00F5EF1A /* MenuViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				ADED21481E31DA8B00F5EF1A /* TimerManager.swift in Sources */,
 				AD56707E1E2FD1AA00C0877B /* Workhour.swift in Sources */,
 				ADDE7C081E3127950042BA8C /* ProjectColorCollectionViewController.swift in Sources */,
+				ADED214A1E31FB1D00F5EF1A /* MenuViewController.swift in Sources */,
 				AD598BD51E0FDC6800A488D4 /* AppDelegate.swift in Sources */,
 				AD07FB6A1E12D53C0050FC22 /* ProjectTableViewCell.swift in Sources */,
 				ADDE7C061E311B340042BA8C /* EditProjectTableViewController.swift in Sources */,
