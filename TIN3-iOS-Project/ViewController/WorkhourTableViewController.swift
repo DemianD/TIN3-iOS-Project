@@ -118,5 +118,26 @@ class WorkhourTableViewController: UITableViewController {
         
         self.tableView.reloadData()
         self.refreshControl?.endRefreshing()
+        
+        scrollToToday()
+    }
+    
+    func scrollToToday() {
+        let sectionNameToday = DateManager.instance.convertToSectionName(Date())
+        var bestSectionIndex = -1
+        
+        for (index, element) in sections.enumerated() {
+            bestSectionIndex = index
+            
+            if sectionNameToday == element {
+                break;
+            }
+        }
+        
+        if bestSectionIndex != -1 {
+            tableView.scrollToRow(
+                at: IndexPath(row: 0, section: bestSectionIndex),
+                at: UITableViewScrollPosition.top, animated: false)
+        }
     }
 }
