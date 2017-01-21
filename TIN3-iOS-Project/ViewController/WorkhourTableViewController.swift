@@ -12,7 +12,10 @@ class WorkhourTableViewController: UITableViewController {
 
     private struct Storyboard {
         static let WorkhourCellIdentifier = "Workhour"
+        static let ShowWorkhourSegue = "ShowWorkhourSegue"
     }
+    
+    var project : Project?
     
     private var sections = [String]()
     private var items = [[Workhour]]()
@@ -78,32 +81,42 @@ class WorkhourTableViewController: UITableViewController {
     
     
     func fetch() {
-        WorkhourRepository.instance.all(withRefresh: true) {
-            self.sections = [String]()
-            self.items = [[Workhour]]()
-            
-            for workhour in $0 {
-                if let start = workhour.start {
-                    // Eerst een sectie maken, en als die niet bestaat toevoegen
-                    let startDate = DateManager.instance.convertToSectionName(start)
-                    
-                    if !self.sections.contains(startDate) {
-                        self.sections.append(startDate)
-                    }
-                    
-                    // De sectie opvragen
-                    let index = self.sections.index(of: startDate)!
-                    
-                    if(self.items.count > index) {
-                        self.items[index].append(workhour)
-                    } else {
-                        self.items.append([workhour])
-                    }
+        if let project = self.project {
+            WorkhourRepository.instance.all(project: project, withRefresh: true) {
+                self.fillDateWithSectionsAndRows(workhours: $0)
+            }
+        } else {
+            WorkhourRepository.instance.all(withRefresh: true) {
+                self.fillDateWithSectionsAndRows(workhours: $0)
+            }
+        }
+    }
+    
+    func fillDateWithSectionsAndRows(workhours: [Workhour]) {
+        sections = [String]()
+        items = [[Workhour]]()
+        
+        for workhour in workhours {
+            if let start = workhour.start {
+                // Eerst een sectie maken, en als die niet bestaat toevoegen
+                let startDate = DateManager.instance.convertToSectionName(start)
+                
+                if !sections.contains(startDate) {
+                    sections.append(startDate)
+                }
+                
+                // De sectie opvragen
+                let index = sections.index(of: startDate)!
+                
+                if(items.count > index) {
+                    items[index].append(workhour)
+                } else {
+                    items.append([workhour])
                 }
             }
-            
-            self.tableView.reloadData()
-            self.refreshControl?.endRefreshing()
         }
+        
+        self.tableView.reloadData()
+        self.refreshControl?.endRefreshing()
     }
 }

@@ -13,6 +13,7 @@ class ProjectViewController: UITableViewController {
     private struct Storyboard {
         static let ProjectTimerSegue = "ProjectTimerSegue"
         static let EditProjectSegue = "EditProjectSegue"
+        static let ShowWorkhoursSegue = "ShowWorkhoursSegue"
     }
     
     @IBOutlet weak var name: UILabel!
@@ -41,6 +42,10 @@ class ProjectViewController: UITableViewController {
         if(segue.identifier == Storyboard.EditProjectSegue) {
             if let epc = segue.destination as? EditProjectTableViewController {
                 epc.project = project
+            }
+        } else if(segue.identifier == Storyboard.ShowWorkhoursSegue) {
+            if let wtc = segue.destination as? WorkhourTableViewController {
+                wtc.project = project
             }
         }
     }
