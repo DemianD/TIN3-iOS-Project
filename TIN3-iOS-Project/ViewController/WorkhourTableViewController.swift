@@ -23,13 +23,13 @@ class WorkhourTableViewController: UITableViewController {
     private var documentController : UIDocumentInteractionController!
     
     override func viewWillAppear(_ animated: Bool) {
-        fetch()
-        
         super.viewWillAppear(animated)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        fetch()
         
         refreshControl?.addTarget(self, action: #selector(self.fetch), for: .valueChanged)
     }
