@@ -12,8 +12,6 @@ import AlamofireObjectMapper
 
 class WorkhourRepository : BaseRepository<Workhour> {
     
-    private var workhours = [Workhour]()
-    
     private init() {
         super.init("projects/workhours")
     }
@@ -26,6 +24,18 @@ class WorkhourRepository : BaseRepository<Workhour> {
 
         super.all(withRefresh: refresh) {
             return handler($0.filter({ $0.project_id == project.id }))
+        }
+    }
+    
+    override func delete(_ model: Workhour, handler: @escaping () -> Void) {
+        let index = models.index(where: { $0.id == model.id })
+        
+        if let index = index {
+            models.remove(at: index)
+        }
+        
+        super.delete(model) {
+            handler()
         }
     }
     

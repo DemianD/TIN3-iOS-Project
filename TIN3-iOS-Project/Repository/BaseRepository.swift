@@ -51,6 +51,12 @@ class BaseRepository<T : Mappable> {
         }
     }
     
+    func delete(_ model: T, handler: @escaping () -> Void) {
+        Alamofire.request(getUrl(), method: .delete, parameters: model.toJSON(), encoding: JSONEncoding.default).responseObject(keyPath: Api.data) { (response: DataResponse<T>) -> Void in
+            handler()
+        }
+    }
+    
     func fetchArray(handler: @escaping ([T]) -> Void) {
         Alamofire.request(getUrl()).responseArray(keyPath: Api.data) { (response: DataResponse<[T]>) -> Void in
             if let modelsArray = response.result.value {
