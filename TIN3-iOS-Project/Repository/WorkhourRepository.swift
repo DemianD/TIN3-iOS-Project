@@ -28,15 +28,19 @@ class WorkhourRepository : BaseRepository<Workhour> {
     }
     
     override func delete(_ model: Workhour, handler: @escaping () -> Void) {
-        let index = models.index(where: { $0.id == model.id })
-        
-        if let index = index {
-            models.remove(at: index)
-        }
-        
         super.delete(model) {
+            let index = self.models.index(where: { $0.id == model.id })
+            
+            if let index = index {
+                self.models.remove(at: index)
+            }
+
             handler()
         }
+    }
+    
+    func deleteWhere(project: Project) {
+        models = models.filter({ $0.project_id != project.id })
     }
     
     static let instance = WorkhourRepository()

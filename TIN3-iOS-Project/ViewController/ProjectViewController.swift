@@ -21,7 +21,7 @@ class ProjectViewController: UITableViewController {
     @IBOutlet weak var pricePerHour: UILabel!
     @IBOutlet weak var colorName: UILabel!
     
-    var project: Project?
+    var project: Project!
     
     override func viewDidLoad() {
         updateUI()
@@ -33,8 +33,14 @@ class ProjectViewController: UITableViewController {
             
             name.text = project.name
             url.text = project.url
-            pricePerHour.text = String(format: "%.2d", project.pricePerHour)
+            pricePerHour.text = String(format: "%.2f", project.pricePerHour)
             colorName.text = project.colorName
+        }
+    }
+    
+    @IBAction func delete(sender: UIButton) {
+        ProjectRepository.instance.delete(project) {
+            self.performSegue(withIdentifier: "projects", sender: self)
         }
     }
     
