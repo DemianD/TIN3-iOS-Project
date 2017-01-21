@@ -23,6 +23,8 @@
 		AD792ED71E13C38900E3430F /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD792ED61E13C38900E3430F /* Circle.swift */; };
 		ADB272AF1E2E3E5A00D0FAD4 /* ProjectRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB272AE1E2E3E5A00D0FAD4 /* ProjectRepository.swift */; };
 		ADBD53E11E12DBBB00549EFA /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD53E01E12DBBB00549EFA /* ProjectViewController.swift */; };
+		ADD748F71E33746600CBE92C /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD748F61E33746600CBE92C /* BaseRepository.swift */; };
+		ADD748F91E3378BF00CBE92C /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD748F81E3378BF00CBE92C /* Api.swift */; };
 		ADDE7C041E30D0FD0042BA8C /* EditWorkhourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDE7C031E30D0FD0042BA8C /* EditWorkhourViewController.swift */; };
 		ADDE7C061E311B340042BA8C /* EditProjectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDE7C051E311B340042BA8C /* EditProjectTableViewController.swift */; };
 		ADDE7C081E3127950042BA8C /* ProjectColorCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDE7C071E3127950042BA8C /* ProjectColorCollectionViewController.swift */; };
@@ -54,6 +56,8 @@
 		AD792ED61E13C38900E3430F /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Circle.swift; path = View/Component/Circle.swift; sourceTree = "<group>"; };
 		ADB272AE1E2E3E5A00D0FAD4 /* ProjectRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectRepository.swift; path = Repository/ProjectRepository.swift; sourceTree = "<group>"; };
 		ADBD53E01E12DBBB00549EFA /* ProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectViewController.swift; path = ViewController/ProjectViewController.swift; sourceTree = "<group>"; };
+		ADD748F61E33746600CBE92C /* BaseRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseRepository.swift; path = Repository/BaseRepository.swift; sourceTree = "<group>"; };
+		ADD748F81E3378BF00CBE92C /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		ADDE7C031E30D0FD0042BA8C /* EditWorkhourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditWorkhourViewController.swift; path = ViewController/EditWorkhourViewController.swift; sourceTree = "<group>"; };
 		ADDE7C051E311B340042BA8C /* EditProjectTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditProjectTableViewController.swift; path = ViewController/EditProjectTableViewController.swift; sourceTree = "<group>"; };
 		ADDE7C071E3127950042BA8C /* ProjectColorCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectColorCollectionViewController.swift; path = ViewController/ProjectColorCollectionViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +168,7 @@
 		ADB272AC1E2E2D1200D0FAD4 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				ADD748F81E3378BF00CBE92C /* Api.swift */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -173,6 +178,7 @@
 			children = (
 				ADB272AE1E2E3E5A00D0FAD4 /* ProjectRepository.swift */,
 				AD56707F1E2FF89E00C0877B /* WorkhourRepository.swift */,
+				ADD748F61E33746600CBE92C /* BaseRepository.swift */,
 			);
 			name = Repository;
 			sourceTree = "<group>";
@@ -345,6 +351,8 @@
 				AD598BD51E0FDC6800A488D4 /* AppDelegate.swift in Sources */,
 				AD07FB6A1E12D53C0050FC22 /* ProjectTableViewCell.swift in Sources */,
 				ADDE7C061E311B340042BA8C /* EditProjectTableViewController.swift in Sources */,
+				ADD748F71E33746600CBE92C /* BaseRepository.swift in Sources */,
+				ADD748F91E3378BF00CBE92C /* Api.swift in Sources */,
 				AD07FB6C1E12D5440050FC22 /* Project.swift in Sources */,
 				AD792ED71E13C38900E3430F /* Circle.swift in Sources */,
 				AD56707C1E2FCFAF00C0877B /* TimerViewController.swift in Sources */,
