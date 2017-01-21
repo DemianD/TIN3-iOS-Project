@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import CoreLocation
 
-class TimerViewController: UITableViewController, UIPickerViewDelegate, UIPickerViewDataSource
+class TimerViewController: UITableViewController, UIPickerViewDelegate, UIPickerViewDataSource, CLLocationManagerDelegate
 {
     @IBOutlet weak var toggle: UIButton!
     
@@ -27,9 +28,13 @@ class TimerViewController: UITableViewController, UIPickerViewDelegate, UIPicker
     }
     
     private let timer = TimerManager.instance
-
+    private let locationManager = CLLocationManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest // Zal wel veel batterij gebruiken
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -63,7 +68,22 @@ class TimerViewController: UITableViewController, UIPickerViewDelegate, UIPicker
 
         timer.toggle(description: _description.text, location: location.text, project_id: project_id)
         
+        if timer.started() {
+            locationManager.requestWhenInUseAuthorization()
+            locationManager.startUpdatingLocation()
+        }
+        
         updateUI()
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if(locations.count > 0) {
+            timer.updateCurrentLocation(
+                latitude: locations.first!.coordinate.latitude,
+                longitude: locations.first!.coordinate.longitude)
+            
+            locationManager.stopUpdatingLocation()
+        }
     }
     
     public func numberOfComponents(in pickerView: UIPickerView) -> Int {

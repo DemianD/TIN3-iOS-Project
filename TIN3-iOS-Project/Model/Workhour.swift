@@ -21,6 +21,9 @@ class Workhour : Mappable
     var project_id = -1
     var user_id = 1 // TODO: use real user account
     
+    var latitude = 0.0
+    var longitude = 0.0
+    
     var project: Project? {
         return ProjectRepository.instance.find(project_id)
     }
@@ -53,6 +56,9 @@ class Workhour : Mappable
         if let mysqlDate = DateManager.instance.convertMysql(map["stop"].currentValue) {
             stop = mysqlDate
         }
+        
+        latitude <- map["latitude"]
+        longitude <- map["longitude"]
     }
     
     func isStarted() -> Bool {

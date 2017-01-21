@@ -50,11 +50,26 @@ class TimerManager {
         }
     }
 
+    func updateCurrentLocation(latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
+        let workhour = fetch()
+        
+        if let workhour = workhour {
+            workhour.latitude = latitude
+            workhour.longitude = longitude
+            
+            saveLocal(workhour)
+        }
+    }
+    
     private func start(_ workhour : Workhour) {
         workhour.start = Date()
         
         saveLocal(workhour)
         startTimer()
+    }
+    
+    func started() -> Bool {
+        return fetch() != nil
     }
     
     private func stop(_ workhour : Workhour) {
