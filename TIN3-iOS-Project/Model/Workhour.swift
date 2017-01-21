@@ -8,6 +8,7 @@
 
 import Foundation
 import ObjectMapper
+import CoreLocation
 
 class Workhour : Mappable
 {
@@ -26,6 +27,12 @@ class Workhour : Mappable
     
     var project: Project? {
         return ProjectRepository.instance.find(project_id)
+    }
+    
+    var coordinate: CLLocationCoordinate2D {
+        get {
+            return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        }
     }
     
     init() {

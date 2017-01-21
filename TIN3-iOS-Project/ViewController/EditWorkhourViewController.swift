@@ -12,17 +12,50 @@ import Eureka
 
 // Source: https://newfivefour.com/swift-ios-uipicker.html
 
-class EditWorkhourViewController: UITableViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class EditWorkhourViewController: UITableViewController/*, UIPickerViewDelegate, UIPickerViewDataSource*/ {
     
-    private var items = [Project]()
+    var workhour : Workhour!
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    private var items = [Project]() {
+        didSet {
+            //projectPicker.reloadAllComponents()
+        }
+    }
+    
+    @IBOutlet weak var lblDescription: UILabel!
+    @IBOutlet weak var lblDate: UILabel!
+    @IBOutlet weak var lblTime: UILabel!
+    
+    @IBOutlet weak var map: MKMapView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        updateUI()
+        
         ProjectRepository.instance.all {
             self.items = $0
         }
     }
     
+    func updateUI() {
+        lblDescription.text = workhour!.description
+        lblDate.text = DateManager.instance.convertTo(format: "EEEE d MMM yyyy", date: workhour!.start)
+        lblTime.text = "van \(workhour!.getStartTime()) tot \(workhour!.getStopTime())"
+        
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = workhour.coordinate
+        
+        map.addAnnotation(annotation)
+        
+        let span = MKCoordinateSpanMake(0.035, 0.035)
+        let region = MKCoordinateRegion(center: workhour.coordinate, span: span)
+        
+
+        map.setRegion(region, animated: false)
+    }
+    
+    /*
     public func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -37,4 +70,5 @@ class EditWorkhourViewController: UITableViewController, UIPickerViewDelegate, U
                            forComponent component: Int) -> String? {
         return items[row].name
     }
+     */
 }

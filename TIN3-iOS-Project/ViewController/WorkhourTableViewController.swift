@@ -73,6 +73,14 @@ class WorkhourTableViewController: UITableViewController {
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == Storyboard.ShowWorkhourSegue) {
+            if let ewc = segue.destination as? EditWorkhourViewController {
+                ewc.workhour = items[tableView.indexPathForSelectedRow!.section][tableView.indexPathForSelectedRow!.row]
+            }
+        }
+    }
+    
     @IBAction func export(_ sender: UIBarButtonItem) {
         var content = ""
         
@@ -82,7 +90,7 @@ class WorkhourTableViewController: UITableViewController {
             }
         }
         
-        let url = NSTemporaryDirectory().appending("test.csv")
+        let url = NSTemporaryDirectory().appending("werkuren.csv")
         
         do {
             try content.write(toFile: url, atomically: true, encoding: String.Encoding.utf8)
