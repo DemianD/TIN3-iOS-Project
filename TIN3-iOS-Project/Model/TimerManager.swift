@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import CoreLocation
+import UserNotifications
 
 class TimerManager {
     
@@ -20,6 +21,8 @@ class TimerManager {
     
     private let storage = UserDefaults.standard
     private let dateManager = DateManager.instance
+    
+    private let notificationManager = NotificationManager()
     
     private var timer : Timer?
     
@@ -43,6 +46,16 @@ class TimerManager {
         workhour.description = description
         workhour.location = location
         workhour.project_id = project_id
+        
+        if workhour.isStarted() {
+            stop(workhour)
+        } else {
+            start(workhour)
+        }
+    }
+    
+    func toggle() {
+        let workhour = firstOrNew()
         
         if workhour.isStarted() {
             stop(workhour)
@@ -135,6 +148,25 @@ class TimerManager {
             let elapsed = Date().timeIntervalSince(start)
             
             tabBarItem?.badgeValue = DateManager.instance.convertTimeInterval(elapsed)
+        }
+    }
+    
+    func registerNotifications() {
+        if fetch() != nil {
+            
+            // Notify every 30 seconds
+            notificationManager.notify(
+                for: "timer",
+                with: "De timer is nog aan het lopen.",
+                every: 5 * 60,
+                repeats: true)
+            
+            // Notify after 5 seconds (for testing)
+            notificationManager.notify(
+                for: "timer",
+                with: "De timer is nog aan het lopen.",
+                every: 5,
+                repeats: false)
         }
     }
 }

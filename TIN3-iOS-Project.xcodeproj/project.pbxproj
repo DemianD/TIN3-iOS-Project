@@ -20,6 +20,7 @@
 		AD598BDA1E0FDC6800A488D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD598BD81E0FDC6800A488D4 /* Main.storyboard */; };
 		AD598BDC1E0FDC6800A488D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD598BDB1E0FDC6800A488D4 /* Assets.xcassets */; };
 		AD598BDF1E0FDC6800A488D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD598BDD1E0FDC6800A488D4 /* LaunchScreen.storyboard */; };
+		AD5B04091E353277004AF2AF /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5B04081E353277004AF2AF /* NotificationManager.swift */; };
 		AD6447F91E33CB87007CD7D2 /* EditWorkhourTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6447F81E33CB87007CD7D2 /* EditWorkhourTableViewController.swift */; };
 		AD792ED71E13C38900E3430F /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD792ED61E13C38900E3430F /* Circle.swift */; };
 		ADB272AF1E2E3E5A00D0FAD4 /* ProjectRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB272AE1E2E3E5A00D0FAD4 /* ProjectRepository.swift */; };
@@ -54,6 +55,7 @@
 		AD598BDB1E0FDC6800A488D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD598BDE1E0FDC6800A488D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD598BE01E0FDC6800A488D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD5B04081E353277004AF2AF /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		AD6447F81E33CB87007CD7D2 /* EditWorkhourTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditWorkhourTableViewController.swift; path = ViewController/EditWorkhourTableViewController.swift; sourceTree = "<group>"; };
 		AD792ED61E13C38900E3430F /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Circle.swift; path = View/Component/Circle.swift; sourceTree = "<group>"; };
 		ADB272AE1E2E3E5A00D0FAD4 /* ProjectRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectRepository.swift; path = Repository/ProjectRepository.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				ADED21431E31C88600F5EF1A /* Colors.swift */,
 				ADED21451E31CACC00F5EF1A /* DateManager.swift */,
 				ADED21471E31DA8B00F5EF1A /* TimerManager.swift */,
+				AD5B04081E353277004AF2AF /* NotificationManager.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				AD6447F91E33CB87007CD7D2 /* EditWorkhourTableViewController.swift in Sources */,
 				ADDE7C041E30D0FD0042BA8C /* WorkhourViewController.swift in Sources */,
 				AD5670801E2FF89E00C0877B /* WorkhourRepository.swift in Sources */,
+				AD5B04091E353277004AF2AF /* NotificationManager.swift in Sources */,
 				AD5735D91E143A950012C223 /* CreateProjectViewController.swift in Sources */,
 				ADB272AF1E2E3E5A00D0FAD4 /* ProjectRepository.swift in Sources */,
 				ADED21461E31CACC00F5EF1A /* DateManager.swift in Sources */,

@@ -113,16 +113,12 @@ class EditWorkhourTableViewController: UITableViewController, UIPickerViewDelega
         workhour.start = startTimePicker.date
         workhour.stop = stopTimePicker.date
         
-        // kan korter, TODO
         workhour.start = DateManager.instance.setOnlyDate(from: startDatePicker.date, to: workhour.start!)
         workhour.stop = DateManager.instance.setOnlyDate(from: startDatePicker.date, to: workhour.stop!)
         
         WorkhourRepository.instance.save(workhour) { _ in
             self.performSegue(withIdentifier: "workhour", sender: self)
         }
-        
-        // Now we need to update the start and stop date without the time
-        // TODO
     }
     
     private func initPickers() {
