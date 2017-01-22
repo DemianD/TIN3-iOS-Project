@@ -25,9 +25,9 @@ class WorkhourTableViewCell: UITableViewCell {
     }
     
     private func updateUI() {
-        _description.text = workhour.description
+        _description.text = workhour.description == "" ? "Geen omschrijving" : workhour.description
         location.text = workhour.location
-        
+    
         startTime.text = workhour.getStartTime()
         stopTime.text = workhour.getStopTime()
         

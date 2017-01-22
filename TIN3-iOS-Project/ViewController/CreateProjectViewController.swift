@@ -31,4 +31,8 @@ class CreateProjectViewController: UITableViewController {
             self.performSegue(withIdentifier: "projects", sender: self)
         };
     }
+    
+    @IBAction func hideKeyboard(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
 }

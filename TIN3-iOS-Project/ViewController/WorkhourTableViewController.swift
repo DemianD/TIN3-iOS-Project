@@ -75,7 +75,7 @@ class WorkhourTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == Storyboard.ShowWorkhourSegue) {
-            if let ewc = segue.destination as? EditWorkhourViewController {
+            if let ewc = segue.destination as? WorkhourViewController {
                 ewc.workhour = items[tableView.indexPathForSelectedRow!.section][tableView.indexPathForSelectedRow!.row]
             }
         }

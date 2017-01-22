@@ -20,12 +20,13 @@
 		AD598BDA1E0FDC6800A488D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD598BD81E0FDC6800A488D4 /* Main.storyboard */; };
 		AD598BDC1E0FDC6800A488D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD598BDB1E0FDC6800A488D4 /* Assets.xcassets */; };
 		AD598BDF1E0FDC6800A488D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD598BDD1E0FDC6800A488D4 /* LaunchScreen.storyboard */; };
+		AD6447F91E33CB87007CD7D2 /* EditWorkhourTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6447F81E33CB87007CD7D2 /* EditWorkhourTableViewController.swift */; };
 		AD792ED71E13C38900E3430F /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD792ED61E13C38900E3430F /* Circle.swift */; };
 		ADB272AF1E2E3E5A00D0FAD4 /* ProjectRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB272AE1E2E3E5A00D0FAD4 /* ProjectRepository.swift */; };
 		ADBD53E11E12DBBB00549EFA /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD53E01E12DBBB00549EFA /* ProjectViewController.swift */; };
 		ADD748F71E33746600CBE92C /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD748F61E33746600CBE92C /* BaseRepository.swift */; };
 		ADD748F91E3378BF00CBE92C /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD748F81E3378BF00CBE92C /* Api.swift */; };
-		ADDE7C041E30D0FD0042BA8C /* EditWorkhourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDE7C031E30D0FD0042BA8C /* EditWorkhourViewController.swift */; };
+		ADDE7C041E30D0FD0042BA8C /* WorkhourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDE7C031E30D0FD0042BA8C /* WorkhourViewController.swift */; };
 		ADDE7C061E311B340042BA8C /* EditProjectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDE7C051E311B340042BA8C /* EditProjectTableViewController.swift */; };
 		ADDE7C081E3127950042BA8C /* ProjectColorCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDE7C071E3127950042BA8C /* ProjectColorCollectionViewController.swift */; };
 		ADED21441E31C88600F5EF1A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADED21431E31C88600F5EF1A /* Colors.swift */; };
@@ -53,12 +54,13 @@
 		AD598BDB1E0FDC6800A488D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD598BDE1E0FDC6800A488D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD598BE01E0FDC6800A488D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD6447F81E33CB87007CD7D2 /* EditWorkhourTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditWorkhourTableViewController.swift; path = ViewController/EditWorkhourTableViewController.swift; sourceTree = "<group>"; };
 		AD792ED61E13C38900E3430F /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Circle.swift; path = View/Component/Circle.swift; sourceTree = "<group>"; };
 		ADB272AE1E2E3E5A00D0FAD4 /* ProjectRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectRepository.swift; path = Repository/ProjectRepository.swift; sourceTree = "<group>"; };
 		ADBD53E01E12DBBB00549EFA /* ProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectViewController.swift; path = ViewController/ProjectViewController.swift; sourceTree = "<group>"; };
 		ADD748F61E33746600CBE92C /* BaseRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseRepository.swift; path = Repository/BaseRepository.swift; sourceTree = "<group>"; };
 		ADD748F81E3378BF00CBE92C /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
-		ADDE7C031E30D0FD0042BA8C /* EditWorkhourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditWorkhourViewController.swift; path = ViewController/EditWorkhourViewController.swift; sourceTree = "<group>"; };
+		ADDE7C031E30D0FD0042BA8C /* WorkhourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkhourViewController.swift; path = ViewController/WorkhourViewController.swift; sourceTree = "<group>"; };
 		ADDE7C051E311B340042BA8C /* EditProjectTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditProjectTableViewController.swift; path = ViewController/EditProjectTableViewController.swift; sourceTree = "<group>"; };
 		ADDE7C071E3127950042BA8C /* ProjectColorCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectColorCollectionViewController.swift; path = ViewController/ProjectColorCollectionViewController.swift; sourceTree = "<group>"; };
 		ADED21431E31C88600F5EF1A /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -97,10 +99,11 @@
 				AD5735D81E143A950012C223 /* CreateProjectViewController.swift */,
 				AD5670771E2FA2BE00C0877B /* WorkhourTableViewController.swift */,
 				AD56707B1E2FCFAF00C0877B /* TimerViewController.swift */,
-				ADDE7C031E30D0FD0042BA8C /* EditWorkhourViewController.swift */,
+				ADDE7C031E30D0FD0042BA8C /* WorkhourViewController.swift */,
 				ADDE7C051E311B340042BA8C /* EditProjectTableViewController.swift */,
 				ADDE7C071E3127950042BA8C /* ProjectColorCollectionViewController.swift */,
 				ADED21491E31FB1D00F5EF1A /* MenuViewController.swift */,
+				AD6447F81E33CB87007CD7D2 /* EditWorkhourTableViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -339,7 +342,8 @@
 				ADBD53E11E12DBBB00549EFA /* ProjectViewController.swift in Sources */,
 				ADED21441E31C88600F5EF1A /* Colors.swift in Sources */,
 				AD07FB6E1E12D54B0050FC22 /* ProjectsViewController.swift in Sources */,
-				ADDE7C041E30D0FD0042BA8C /* EditWorkhourViewController.swift in Sources */,
+				AD6447F91E33CB87007CD7D2 /* EditWorkhourTableViewController.swift in Sources */,
+				ADDE7C041E30D0FD0042BA8C /* WorkhourViewController.swift in Sources */,
 				AD5670801E2FF89E00C0877B /* WorkhourRepository.swift in Sources */,
 				AD5735D91E143A950012C223 /* CreateProjectViewController.swift in Sources */,
 				ADB272AF1E2E3E5A00D0FAD4 /* ProjectRepository.swift in Sources */,

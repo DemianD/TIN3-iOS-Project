@@ -56,4 +56,8 @@ class EditProjectTableViewController: UITableViewController {
     @IBAction func unwindFromProjectColor(segue: UIStoryboardSegue) {
         colorName.text = project.colorName // Only update the color name
     }
+    
+    @IBAction func hideKeyboard(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
 }
