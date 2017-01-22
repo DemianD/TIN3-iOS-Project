@@ -38,11 +38,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TIN3-iOS-Project/Model/Workhour.swift"
-            timestampString = "506704752.874836"
+            timestampString = "506780125.759552"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "mapping(map:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -797,6 +797,38 @@
             endingLineNumber = "56"
             landmarkName = "updateCurrentLocation(latitude:longitude:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TIN3_iOS_Project.TimerManager.updateCurrentLocation (latitude : Swift.Double, longitude : Swift.Double) -&gt; ()"
+                  moduleName = "TIN3-iOS-Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/demian/Documents/Gebruiker/School/HoGent/TI3/iOS/Project/TIN3-iOS-Project/TIN3-iOS-Project/Model/TimerManager.swift"
+                  timestampString = "506783573.442811"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TIN3_iOS_Project.TimerManager.updateCurrentLocation (latitude : Swift.Double, longitude : Swift.Double) -&gt; ()"
+                  moduleName = "TIN3-iOS-Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/demian/Documents/Gebruiker/School/HoGent/TI3/iOS/Project/TIN3-iOS-Project/TIN3-iOS-Project/Model/TimerManager.swift"
+                  timestampString = "506783573.444614"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1026,7 +1058,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TIN3-iOS-Project/ViewController/EditWorkhourTableViewController.swift"
@@ -1042,7 +1074,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TIN3-iOS-Project/ViewController/EditWorkhourTableViewController.swift"
@@ -1058,7 +1090,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TIN3-iOS-Project/ViewController/EditWorkhourTableViewController.swift"
@@ -1068,6 +1100,230 @@
             startingLineNumber = "81"
             endingLineNumber = "81"
             landmarkName = "tableView(_:heightForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TIN3-iOS-Project/ViewController/EditWorkhourTableViewController.swift"
+            timestampString = "506783183.92199"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "save(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TIN3_iOS_Project.EditWorkhourTableViewController.save (Any) -&gt; ()"
+                  moduleName = "TIN3-iOS-Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/demian/Documents/Gebruiker/School/HoGent/TI3/iOS/Project/TIN3-iOS-Project/TIN3-iOS-Project/ViewController/EditWorkhourTableViewController.swift"
+                  timestampString = "506783573.452126"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "5276">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TIN3_iOS_Project.EditWorkhourTableViewController.(save (Any) -&gt; ()).(closure #1)"
+                  moduleName = "TIN3-iOS-Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/demian/Documents/Gebruiker/School/HoGent/TI3/iOS/Project/TIN3-iOS-Project/TIN3-iOS-Project/ViewController/EditWorkhourTableViewController.swift"
+                  timestampString = "506783573.454197"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "121"
+                  endingLineNumber = "121"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TIN3-iOS-Project/ViewController/EditWorkhourTableViewController.swift"
+            timestampString = "506783184.496876"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "save(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TIN3_iOS_Project.EditWorkhourTableViewController.save (Any) -&gt; ()"
+                  moduleName = "TIN3-iOS-Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/demian/Documents/Gebruiker/School/HoGent/TI3/iOS/Project/TIN3-iOS-Project/TIN3-iOS-Project/ViewController/EditWorkhourTableViewController.swift"
+                  timestampString = "506783573.459102"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "5276">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TIN3_iOS_Project.EditWorkhourTableViewController.(save (Any) -&gt; ()).(closure #1)"
+                  moduleName = "TIN3-iOS-Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/demian/Documents/Gebruiker/School/HoGent/TI3/iOS/Project/TIN3-iOS-Project/TIN3-iOS-Project/ViewController/EditWorkhourTableViewController.swift"
+                  timestampString = "506783573.461382"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "121"
+                  endingLineNumber = "121"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TIN3-iOS-Project/ViewController/EditWorkhourTableViewController.swift"
+            timestampString = "506783202.811147"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "save(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TIN3-iOS-Project/ViewController/EditWorkhourTableViewController.swift"
+            timestampString = "506783203.615136"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "save(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TIN3_iOS_Project.EditWorkhourTableViewController.save (Any) -&gt; ()"
+                  moduleName = "TIN3-iOS-Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/demian/Documents/Gebruiker/School/HoGent/TI3/iOS/Project/TIN3-iOS-Project/TIN3-iOS-Project/ViewController/EditWorkhourTableViewController.swift"
+                  timestampString = "506783573.469233"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "122"
+                  endingLineNumber = "122"
+                  offsetFromSymbolStart = "5624">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TIN3_iOS_Project.EditWorkhourTableViewController.(save (Any) -&gt; ()).(closure #1)"
+                  moduleName = "TIN3-iOS-Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/demian/Documents/Gebruiker/School/HoGent/TI3/iOS/Project/TIN3-iOS-Project/TIN3-iOS-Project/ViewController/EditWorkhourTableViewController.swift"
+                  timestampString = "506783573.470574"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "122"
+                  endingLineNumber = "122"
+                  offsetFromSymbolStart = "252">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TIN3-iOS-Project/View/DateManager.swift"
+            timestampString = "506783448.791788"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "setOnlyDate(from:to:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TIN3-iOS-Project/View/DateManager.swift"
+            timestampString = "506783449.248212"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "setOnlyDate(from:to:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TIN3-iOS-Project/View/DateManager.swift"
+            timestampString = "506783450.315442"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "setOnlyDate(from:to:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TIN3-iOS-Project/View/DateManager.swift"
+            timestampString = "506783450.668127"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "setOnlyDate(from:to:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

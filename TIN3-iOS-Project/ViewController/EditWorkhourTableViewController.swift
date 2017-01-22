@@ -85,7 +85,6 @@ class EditWorkhourTableViewController: UITableViewController, UIPickerViewDelega
     }
     
     func updateUI() {
-        
         _description.text = workhour.description
         location.text = workhour.location
         
@@ -109,8 +108,18 @@ class EditWorkhourTableViewController: UITableViewController, UIPickerViewDelega
         workhour.description = _description.text
         workhour.location = location.text
         
+        workhour.project_id = items[projectPicker.selectedRow(inComponent: 0)].id
+        
         workhour.start = startTimePicker.date
         workhour.stop = stopTimePicker.date
+        
+        // kan korter, TODO
+        workhour.start = DateManager.instance.setOnlyDate(from: startDatePicker.date, to: workhour.start!)
+        workhour.stop = DateManager.instance.setOnlyDate(from: startDatePicker.date, to: workhour.stop!)
+        
+        WorkhourRepository.instance.save(workhour) { _ in
+            self.performSegue(withIdentifier: "workhour", sender: self)
+        }
         
         // Now we need to update the start and stop date without the time
         // TODO

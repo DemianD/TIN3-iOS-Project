@@ -70,6 +70,20 @@ class DateManager {
         }
     }
     
+    
+    func setOnlyDate(from: Date, to: Date) -> Date {
+        let calendar = Calendar(identifier: .gregorian)
+        
+        let componentsFrom = calendar.dateComponents([.year, .month, .day], from: from)
+        var componentsTo = calendar.dateComponents([.hour, .minute, .second], from: to)
+        
+        componentsTo.year = componentsFrom.year
+        componentsTo.month = componentsFrom.month
+        componentsTo.day = componentsFrom.day
+        
+        return calendar.date(from: componentsTo)!
+    }
+    
     func intToString(_ int: Int) -> String {
         return String(format: "%02d", int)
     }
