@@ -20,7 +20,6 @@ class Workhour : Mappable
     var stop: Date?
     
     var project_id = -1
-    var user_id = 1 // TODO: use real user account
     
     var latitude = 0.0
     var longitude = 0.0
@@ -50,7 +49,6 @@ class Workhour : Mappable
         location <- map["location"]
         
         project_id <- map["project_id"]
-        user_id <- map["user_id"]
         
         // Map when it's a timestamp
         start <- (map["start"], DateTransform())
