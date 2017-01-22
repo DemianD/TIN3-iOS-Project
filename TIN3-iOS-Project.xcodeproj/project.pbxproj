@@ -7,21 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD07FB6A1E12D53C0050FC22 /* ProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD07FB691E12D53C0050FC22 /* ProjectTableViewCell.swift */; };
+		AD07FB6C1E12D5440050FC22 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD07FB6B1E12D5440050FC22 /* Project.swift */; };
+		AD07FB6E1E12D54B0050FC22 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD07FB6D1E12D54B0050FC22 /* ProjectsViewController.swift */; };
+		AD5670781E2FA2BE00C0877B /* WorkhourTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5670771E2FA2BE00C0877B /* WorkhourTableViewController.swift */; };
+		AD56707A1E2FA7EC00C0877B /* WorkhourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5670791E2FA7EC00C0877B /* WorkhourTableViewCell.swift */; };
+		AD56707C1E2FCFAF00C0877B /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD56707B1E2FCFAF00C0877B /* TimerViewController.swift */; };
+		AD56707E1E2FD1AA00C0877B /* Workhour.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD56707D1E2FD1AA00C0877B /* Workhour.swift */; };
+		AD5670801E2FF89E00C0877B /* WorkhourRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD56707F1E2FF89E00C0877B /* WorkhourRepository.swift */; };
+		AD5735D91E143A950012C223 /* CreateProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5735D81E143A950012C223 /* CreateProjectViewController.swift */; };
 		AD598BD51E0FDC6800A488D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD598BD41E0FDC6800A488D4 /* AppDelegate.swift */; };
-		AD598BD71E0FDC6800A488D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD598BD61E0FDC6800A488D4 /* ViewController.swift */; };
 		AD598BDA1E0FDC6800A488D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD598BD81E0FDC6800A488D4 /* Main.storyboard */; };
 		AD598BDC1E0FDC6800A488D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD598BDB1E0FDC6800A488D4 /* Assets.xcassets */; };
 		AD598BDF1E0FDC6800A488D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD598BDD1E0FDC6800A488D4 /* LaunchScreen.storyboard */; };
+		AD5B04091E353277004AF2AF /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5B04081E353277004AF2AF /* NotificationManager.swift */; };
+		AD6447F91E33CB87007CD7D2 /* EditWorkhourTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6447F81E33CB87007CD7D2 /* EditWorkhourTableViewController.swift */; };
+		AD792ED71E13C38900E3430F /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD792ED61E13C38900E3430F /* Circle.swift */; };
+		ADB272AF1E2E3E5A00D0FAD4 /* ProjectRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB272AE1E2E3E5A00D0FAD4 /* ProjectRepository.swift */; };
+		ADBD53E11E12DBBB00549EFA /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD53E01E12DBBB00549EFA /* ProjectViewController.swift */; };
+		ADD748F71E33746600CBE92C /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD748F61E33746600CBE92C /* BaseRepository.swift */; };
+		ADD748F91E3378BF00CBE92C /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD748F81E3378BF00CBE92C /* Api.swift */; };
+		ADDE7C041E30D0FD0042BA8C /* WorkhourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDE7C031E30D0FD0042BA8C /* WorkhourViewController.swift */; };
+		ADDE7C061E311B340042BA8C /* EditProjectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDE7C051E311B340042BA8C /* EditProjectTableViewController.swift */; };
+		ADDE7C081E3127950042BA8C /* ProjectColorCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDE7C071E3127950042BA8C /* ProjectColorCollectionViewController.swift */; };
+		ADED21441E31C88600F5EF1A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADED21431E31C88600F5EF1A /* Colors.swift */; };
+		ADED21461E31CACC00F5EF1A /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADED21451E31CACC00F5EF1A /* DateManager.swift */; };
+		ADED21481E31DA8B00F5EF1A /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADED21471E31DA8B00F5EF1A /* TimerManager.swift */; };
+		ADED214A1E31FB1D00F5EF1A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADED21491E31FB1D00F5EF1A /* MenuViewController.swift */; };
+		F3F5C65ADE53E94BF66D96E8 /* Pods_TIN3_iOS_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85AE1A52826DECB84F31A872 /* Pods_TIN3_iOS_Project.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40F04006D5C6799016D5CE73 /* Pods-TIN3-iOS-Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TIN3-iOS-Project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TIN3-iOS-Project/Pods-TIN3-iOS-Project.debug.xcconfig"; sourceTree = "<group>"; };
+		85AE1A52826DECB84F31A872 /* Pods_TIN3_iOS_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TIN3_iOS_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD07FB691E12D53C0050FC22 /* ProjectTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectTableViewCell.swift; path = View/ProjectTableViewCell.swift; sourceTree = "<group>"; };
+		AD07FB6B1E12D5440050FC22 /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Project.swift; path = Model/Project.swift; sourceTree = "<group>"; };
+		AD07FB6D1E12D54B0050FC22 /* ProjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectsViewController.swift; path = ViewController/ProjectsViewController.swift; sourceTree = "<group>"; };
+		AD5670771E2FA2BE00C0877B /* WorkhourTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkhourTableViewController.swift; path = ViewController/WorkhourTableViewController.swift; sourceTree = "<group>"; };
+		AD5670791E2FA7EC00C0877B /* WorkhourTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkhourTableViewCell.swift; path = View/WorkhourTableViewCell.swift; sourceTree = "<group>"; };
+		AD56707B1E2FCFAF00C0877B /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimerViewController.swift; path = ViewController/TimerViewController.swift; sourceTree = "<group>"; };
+		AD56707D1E2FD1AA00C0877B /* Workhour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Workhour.swift; path = Model/Workhour.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		AD56707F1E2FF89E00C0877B /* WorkhourRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkhourRepository.swift; path = Repository/WorkhourRepository.swift; sourceTree = "<group>"; };
+		AD5735D81E143A950012C223 /* CreateProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateProjectViewController.swift; path = ViewController/CreateProjectViewController.swift; sourceTree = "<group>"; };
 		AD598BD11E0FDC6800A488D4 /* TIN3-iOS-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TIN3-iOS-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD598BD41E0FDC6800A488D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AD598BD61E0FDC6800A488D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AD598BD91E0FDC6800A488D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD598BDB1E0FDC6800A488D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD598BDE1E0FDC6800A488D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD598BE01E0FDC6800A488D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD5B04081E353277004AF2AF /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		AD6447F81E33CB87007CD7D2 /* EditWorkhourTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditWorkhourTableViewController.swift; path = ViewController/EditWorkhourTableViewController.swift; sourceTree = "<group>"; };
+		AD792ED61E13C38900E3430F /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Circle.swift; path = View/Component/Circle.swift; sourceTree = "<group>"; };
+		ADB272AE1E2E3E5A00D0FAD4 /* ProjectRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectRepository.swift; path = Repository/ProjectRepository.swift; sourceTree = "<group>"; };
+		ADBD53E01E12DBBB00549EFA /* ProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectViewController.swift; path = ViewController/ProjectViewController.swift; sourceTree = "<group>"; };
+		ADD748F61E33746600CBE92C /* BaseRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseRepository.swift; path = Repository/BaseRepository.swift; sourceTree = "<group>"; };
+		ADD748F81E3378BF00CBE92C /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		ADDE7C031E30D0FD0042BA8C /* WorkhourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkhourViewController.swift; path = ViewController/WorkhourViewController.swift; sourceTree = "<group>"; };
+		ADDE7C051E311B340042BA8C /* EditProjectTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditProjectTableViewController.swift; path = ViewController/EditProjectTableViewController.swift; sourceTree = "<group>"; };
+		ADDE7C071E3127950042BA8C /* ProjectColorCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectColorCollectionViewController.swift; path = ViewController/ProjectColorCollectionViewController.swift; sourceTree = "<group>"; };
+		ADED21431E31C88600F5EF1A /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		ADED21451E31CACC00F5EF1A /* DateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateManager.swift; path = View/DateManager.swift; sourceTree = "<group>"; };
+		ADED21471E31DA8B00F5EF1A /* TimerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimerManager.swift; path = Model/TimerManager.swift; sourceTree = "<group>"; };
+		ADED21491E31FB1D00F5EF1A /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = ViewController/MenuViewController.swift; sourceTree = "<group>"; };
+		B9AF1468C7E58FEFB38377C1 /* Pods-TIN3-iOS-Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TIN3-iOS-Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-TIN3-iOS-Project/Pods-TIN3-iOS-Project.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +77,65 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3F5C65ADE53E94BF66D96E8 /* Pods_TIN3_iOS_Project.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		86E50B5B43D138284FCF9EE9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40F04006D5C6799016D5CE73 /* Pods-TIN3-iOS-Project.debug.xcconfig */,
+				B9AF1468C7E58FEFB38377C1 /* Pods-TIN3-iOS-Project.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AD07FB601E12CF7E0050FC22 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AD07FB6D1E12D54B0050FC22 /* ProjectsViewController.swift */,
+				ADBD53E01E12DBBB00549EFA /* ProjectViewController.swift */,
+				AD5735D81E143A950012C223 /* CreateProjectViewController.swift */,
+				AD5670771E2FA2BE00C0877B /* WorkhourTableViewController.swift */,
+				AD56707B1E2FCFAF00C0877B /* TimerViewController.swift */,
+				ADDE7C031E30D0FD0042BA8C /* WorkhourViewController.swift */,
+				ADDE7C051E311B340042BA8C /* EditProjectTableViewController.swift */,
+				ADDE7C071E3127950042BA8C /* ProjectColorCollectionViewController.swift */,
+				ADED21491E31FB1D00F5EF1A /* MenuViewController.swift */,
+				AD6447F81E33CB87007CD7D2 /* EditWorkhourTableViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		AD07FB631E12D0DE0050FC22 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD07FB6B1E12D5440050FC22 /* Project.swift */,
+				AD56707D1E2FD1AA00C0877B /* Workhour.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AD07FB661E12D45E0050FC22 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD792ED51E13C35900E3430F /* Component */,
+				AD07FB691E12D53C0050FC22 /* ProjectTableViewCell.swift */,
+				AD5670791E2FA7EC00C0877B /* WorkhourTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		AD598BC81E0FDC6700A488D4 = {
 			isa = PBXGroup;
 			children = (
 				AD598BD31E0FDC6800A488D4 /* TIN3-iOS-Project */,
 				AD598BD21E0FDC6800A488D4 /* Products */,
+				86E50B5B43D138284FCF9EE9 /* Pods */,
+				B7A6B4E660561F414544E0E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +150,72 @@
 		AD598BD31E0FDC6800A488D4 /* TIN3-iOS-Project */ = {
 			isa = PBXGroup;
 			children = (
-				AD598BD41E0FDC6800A488D4 /* AppDelegate.swift */,
-				AD598BD61E0FDC6800A488D4 /* ViewController.swift */,
+				ADED21421E31C86C00F5EF1A /* Utils */,
+				ADB272AD1E2E3E3400D0FAD4 /* Repository */,
+				ADB272AC1E2E2D1200D0FAD4 /* Service */,
+				AD07FB661E12D45E0050FC22 /* View */,
+				AD07FB631E12D0DE0050FC22 /* Model */,
+				AD07FB601E12CF7E0050FC22 /* ViewController */,
+				ADC9163B1E11B26D00057EDF /* Supporting Files */,
 				AD598BD81E0FDC6800A488D4 /* Main.storyboard */,
+			);
+			path = "TIN3-iOS-Project";
+			sourceTree = "<group>";
+		};
+		AD792ED51E13C35900E3430F /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				AD792ED61E13C38900E3430F /* Circle.swift */,
+			);
+			name = Component;
+			sourceTree = "<group>";
+		};
+		ADB272AC1E2E2D1200D0FAD4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				ADD748F81E3378BF00CBE92C /* Api.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		ADB272AD1E2E3E3400D0FAD4 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				ADB272AE1E2E3E5A00D0FAD4 /* ProjectRepository.swift */,
+				AD56707F1E2FF89E00C0877B /* WorkhourRepository.swift */,
+				ADD748F61E33746600CBE92C /* BaseRepository.swift */,
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
+		ADC9163B1E11B26D00057EDF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD598BD41E0FDC6800A488D4 /* AppDelegate.swift */,
 				AD598BDB1E0FDC6800A488D4 /* Assets.xcassets */,
 				AD598BDD1E0FDC6800A488D4 /* LaunchScreen.storyboard */,
 				AD598BE01E0FDC6800A488D4 /* Info.plist */,
 			);
-			path = "TIN3-iOS-Project";
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ADED21421E31C86C00F5EF1A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				ADED21431E31C88600F5EF1A /* Colors.swift */,
+				ADED21451E31CACC00F5EF1A /* DateManager.swift */,
+				ADED21471E31DA8B00F5EF1A /* TimerManager.swift */,
+				AD5B04081E353277004AF2AF /* NotificationManager.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		B7A6B4E660561F414544E0E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85AE1A52826DECB84F31A872 /* Pods_TIN3_iOS_Project.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +225,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD598BE31E0FDC6800A488D4 /* Build configuration list for PBXNativeTarget "TIN3-iOS-Project" */;
 			buildPhases = (
+				C1423C7B2B844D2B3D8DBE68 /* [CP] Check Pods Manifest.lock */,
 				AD598BCD1E0FDC6800A488D4 /* Sources */,
 				AD598BCE1E0FDC6800A488D4 /* Frameworks */,
 				AD598BCF1E0FDC6800A488D4 /* Resources */,
+				404410E65C580DFD2EEFCC2A /* [CP] Embed Pods Frameworks */,
+				E3CC5C5494DDD9804C56D48E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,13 +289,83 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		404410E65C580DFD2EEFCC2A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TIN3-iOS-Project/Pods-TIN3-iOS-Project-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1423C7B2B844D2B3D8DBE68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E3CC5C5494DDD9804C56D48E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TIN3-iOS-Project/Pods-TIN3-iOS-Project-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AD598BCD1E0FDC6800A488D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD598BD71E0FDC6800A488D4 /* ViewController.swift in Sources */,
+				ADBD53E11E12DBBB00549EFA /* ProjectViewController.swift in Sources */,
+				ADED21441E31C88600F5EF1A /* Colors.swift in Sources */,
+				AD07FB6E1E12D54B0050FC22 /* ProjectsViewController.swift in Sources */,
+				AD6447F91E33CB87007CD7D2 /* EditWorkhourTableViewController.swift in Sources */,
+				ADDE7C041E30D0FD0042BA8C /* WorkhourViewController.swift in Sources */,
+				AD5670801E2FF89E00C0877B /* WorkhourRepository.swift in Sources */,
+				AD5B04091E353277004AF2AF /* NotificationManager.swift in Sources */,
+				AD5735D91E143A950012C223 /* CreateProjectViewController.swift in Sources */,
+				ADB272AF1E2E3E5A00D0FAD4 /* ProjectRepository.swift in Sources */,
+				ADED21461E31CACC00F5EF1A /* DateManager.swift in Sources */,
+				ADED21481E31DA8B00F5EF1A /* TimerManager.swift in Sources */,
+				AD56707E1E2FD1AA00C0877B /* Workhour.swift in Sources */,
+				ADDE7C081E3127950042BA8C /* ProjectColorCollectionViewController.swift in Sources */,
+				ADED214A1E31FB1D00F5EF1A /* MenuViewController.swift in Sources */,
 				AD598BD51E0FDC6800A488D4 /* AppDelegate.swift in Sources */,
+				AD07FB6A1E12D53C0050FC22 /* ProjectTableViewCell.swift in Sources */,
+				ADDE7C061E311B340042BA8C /* EditProjectTableViewController.swift in Sources */,
+				ADD748F71E33746600CBE92C /* BaseRepository.swift in Sources */,
+				ADD748F91E3378BF00CBE92C /* Api.swift in Sources */,
+				AD07FB6C1E12D5440050FC22 /* Project.swift in Sources */,
+				AD792ED71E13C38900E3430F /* Circle.swift in Sources */,
+				AD56707C1E2FCFAF00C0877B /* TimerViewController.swift in Sources */,
+				AD56707A1E2FA7EC00C0877B /* WorkhourTableViewCell.swift in Sources */,
+				AD5670781E2FA2BE00C0877B /* WorkhourTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +486,7 @@
 		};
 		AD598BE41E0FDC6800A488D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40F04006D5C6799016D5CE73 /* Pods-TIN3-iOS-Project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W76TX4VPHL;
@@ -272,6 +500,7 @@
 		};
 		AD598BE51E0FDC6800A488D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9AF1468C7E58FEFB38377C1 /* Pods-TIN3-iOS-Project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W76TX4VPHL;
@@ -302,6 +531,7 @@
 				AD598BE51E0FDC6800A488D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
