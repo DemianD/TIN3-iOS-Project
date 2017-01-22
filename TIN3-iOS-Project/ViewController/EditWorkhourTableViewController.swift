@@ -22,6 +22,8 @@ class EditWorkhourTableViewController: UITableViewController, UIPickerViewDelega
     @IBOutlet weak var stopTimePicker: UIDatePicker!
     
     @IBOutlet weak var projectPicker: UIPickerView!
+    
+    private var pickers = [(section : Int, row: Int, collapsed: Bool, picker: UIDatePicker, label: UILabel)]()
 
     var workhour: Workhour!
     
@@ -43,7 +45,43 @@ class EditWorkhourTableViewController: UITableViewController, UIPickerViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        initPickers()
+        
         updateUI()
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        for (index, tupple) in pickers.enumerated() {
+            
+            if(tupple.section == indexPath.section && tupple.row == indexPath.row && tupple.collapsed == false) {
+                pickers[index].collapsed = true
+                pickers[index].picker.isHidden = false
+            } else {
+                pickers[index].collapsed = false
+                pickers[index].picker.isHidden = true
+            }
+            
+            tableView.beginUpdates()
+            tableView.endUpdates()
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let tupple = pickers.first(where: {
+            $0.section == indexPath.section &&
+            $0.row == (indexPath.row - 1) && // opgelet voor de -1
+            $0.collapsed == false
+        })
+        
+        if tupple != nil {
+            return 0 // de hoogte 0 maken
+        }
+
+        return super.tableView(tableView, heightForRowAt: indexPath)
+    }
+    
+    func togglePicker() {
+        
     }
     
     func updateUI() {
@@ -78,6 +116,18 @@ class EditWorkhourTableViewController: UITableViewController, UIPickerViewDelega
         // TODO
     }
     
+    private func initPickers() {
+        startDatePicker.addTarget(self, action: #selector(self.datePickerChanged(sender:)), for: .valueChanged)
+        startTimePicker.addTarget(self, action: #selector(self.datePickerChanged(sender:)), for: .valueChanged)
+        stopTimePicker.addTarget(self, action: #selector(self.datePickerChanged(sender:)), for: .valueChanged)
+        
+        pickers = [
+            (2, 0, false, startDatePicker, startDate),
+            (2, 2, false, startTimePicker, startTime),
+            (2, 4, false, stopTimePicker, stopTime)
+        ]
+    }
+    
     public func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -88,5 +138,15 @@ class EditWorkhourTableViewController: UITableViewController, UIPickerViewDelega
     
     public func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return items[row].name
+    }
+    
+    func datePickerChanged(sender: UIDatePicker) {
+        if let tupple = pickers.first(where: { $0.picker == sender }) {
+            if tupple.row == 0 {
+                tupple.label.text = DateManager.instance.convertToSectionName(tupple.picker.date)
+            } else {
+                tupple.label.text = DateManager.instance.convertToTimeMinutes(tupple.picker.date)
+            }
+        }
     }
 }
