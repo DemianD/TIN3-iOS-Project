@@ -498,6 +498,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="hideKeyboard:" destination="iyz-ZL-Xkw" eventType="editingDidEndOnExit" id="jsE-M2-tFf"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -520,6 +523,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="hideKeyboard:" destination="iyz-ZL-Xkw" eventType="editingDidEndOnExit" id="hHP-64-XuJ"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>

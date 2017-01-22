@@ -154,4 +154,8 @@ class EditWorkhourTableViewController: UITableViewController, UIPickerViewDelega
             }
         }
     }
+    
+    @IBAction func hideKeyboard(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
 }
