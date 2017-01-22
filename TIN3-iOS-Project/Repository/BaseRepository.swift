@@ -68,16 +68,11 @@ class BaseRepository<T : Mappable> {
     func getUrl(_ suffix : Any? = nil) -> String {
         var requestUrl = Api.url
         
-        print(String(describing: suffix))
-        
         requestUrl = requestUrl.appending(urlSuffix)
-        
         
         if let uSuffix = suffix {
             requestUrl = requestUrl.appending("/").appending(String(describing: uSuffix))
         }
-        
-        print(requestUrl)
         
         return requestUrl
     }

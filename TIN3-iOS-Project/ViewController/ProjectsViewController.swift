@@ -29,7 +29,7 @@ class ProjectsViewController: UITableViewController
             self.projects = $0
         }
         
-        super.viewDidLoad()
+        super.viewWillAppear(animated)
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {

@@ -11,7 +11,7 @@ import UIKit
 
 struct Colors
 {
-    // Source: https://developer.apple.com/ios/human-interface-guidelines/visual-design/color/
+    // Colors from https://developer.apple.com/ios/human-interface-guidelines/visual-design/color/
     static var dictionary = [
         "Red": UIColor(red: 255/255, green: 59/255, blue: 48/255, alpha: 1.0),
         "Orange": UIColor(red: 255/255, green: 149/255, blue: 0/255, alpha: 1.0),
@@ -23,6 +23,5 @@ struct Colors
         "Pink": UIColor(red: 255/255, green: 45/255, blue: 85/255, alpha: 1.0),
         ]
     
-    // Maybe an extension for this
     static var standard = UIColor(red: 255/255, green: 59/255, blue: 48/255, alpha: 1.0)
 }

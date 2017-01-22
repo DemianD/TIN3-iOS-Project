@@ -13,10 +13,6 @@ class CreateProjectViewController: UITableViewController {
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var website: UITextField!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     @IBAction func save(_ sender: UIBarButtonItem) {
         sender.isEnabled = false
         

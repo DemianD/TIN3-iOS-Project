@@ -34,7 +34,7 @@ class TimerViewController: UITableViewController, UIPickerViewDelegate, UIPicker
         super.viewDidLoad()
         
         locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest // Zal wel veel batterij gebruiken
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -18,7 +18,6 @@ class Circle: UIView {
     }
     
     override func draw(_ rect: CGRect) {
-        
        color.set()
         
         let circle = UIBezierPath(
@@ -31,7 +30,6 @@ class Circle: UIView {
         
         circle.fill()
         circle.stroke()
-        
     }
     
     /*
@@ -43,5 +41,4 @@ class Circle: UIView {
         
         self.backgroundColor = UIColor.clear
     }
-
 }
